@@ -14,6 +14,11 @@
   padding: 10px 20px;
   border-bottom: 1px solid black;
 }
+@media screen and (min-width: 922px) {
+  .cabecalho .menu_controls, .cabecalho .hidden_navBar {
+    display: none;
+  }
+}
 .cabecalho .logo {
   height: 100%;
 }
@@ -46,4 +51,85 @@
   color: #FFFCFF;
   border-radius: 5px;
   font-family: "Poppins", cursive;
+}
+@media screen and (max-width: 1200px) {
+  .cabecalho {
+    height: 120px;
+  }
+  .cabecalho .logo {
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 920px) {
+  .cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+  }
+  .cabecalho .navBar, .cabecalho .cta_coleta {
+    display: none;
+  }
+  .cabecalho .menu_controls {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cabecalho .menu_controls .checkbox_menu {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+  .cabecalho .menu_controls .checkbox_menu:checked ~ .burguer_icon {
+    transform: skew(20deg);
+  }
+  .cabecalho .menu_controls .checkbox_menu:hover ~ .burguer_icon {
+    border: 1px solid black;
+  }
+  .cabecalho .menu_controls .burguer_icon {
+    font-size: 3rem;
+    z-index: -1;
+    transition: 0.5s ease all;
+  }
+  .cabecalho .menu_controls .burguer_icon:hover {
+    border: 1px solid black;
+  }
+  .cabecalho .hidden_navBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease all;
+  }
+  .cabecalho .hidden_navBar .navBar_list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  .cabecalho .hidden_navBar .navBar_list .list_item {
+    padding: 5px 10px;
+    margin: 30px 15px;
+    font-size: 1.5rem;
+    font-family: "Roboto", cursive;
+    color: #24A652;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+  .cabecalho .show {
+    transform: translateX(100%);
+  }
+  .cabecalho .hidden {
+    transform: translateX(0%);
+  }
 }/*# sourceMappingURL=Header.module.css.map */
