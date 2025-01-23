@@ -1,0 +1,71 @@
+@import '../variables';
+
+*{
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding: 10px 20px;
+    
+
+    
+    // border: 1px solid black;
+    border-bottom: 1px solid black;
+    .logo{
+        height: 100%;
+    }
+
+    .navBar
+    {
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .navBar_list
+        {
+            display: flex;
+            flex-direction: row;
+
+            list-style-type: none;
+
+            .list_item{
+                // background-color: blue;
+                padding: 5px 10px;
+                margin: 0px 15px;
+
+                font-size: 1.5rem;
+                font-family: $roboto;
+
+                color: $verde_floresta;
+                font-weight: bold;
+                letter-spacing: 4px;
+            }
+        }
+    }
+
+    .cta_coleta
+    {
+        height: 50px;
+        padding: 5px 10px;
+        font-weight: 600;
+        letter-spacing: 2px;
+
+        border: none;
+        background-color: $verde_floresta;
+        color: $branco;
+        border-radius: 5px;
+
+        font-family: $poppins;
+    }
+    
+
+
+}

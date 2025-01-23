@@ -1,0 +1,110 @@
+@import '../variables';
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 100%;
+}
+
+.main
+{
+    height: 800px;
+    width: 100%;
+    // background-color: red;
+    color: white;
+    position: relative; 
+    overflow: hidden;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+        content: "";
+        transition: .5s ease all;
+        position: absolute;
+        /* Posiciona o pseudo-elemento absolutamente em relação ao elemento pai */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('https://www.agenciapara.com.br/midias/2021/grandes/up_ag_30521_c922a8b5-ff5b-e48f-ba1f-c49ad3ddd59a.jpg');
+        filter: blur(5px)  brightness(40%);
+        
+        
+        transform: scale(1.1);
+        /* Cor de fundo semi-transparente (aqui, um preto com 50% de opacidade) */
+        z-index: -1;
+    }
+
+    .control
+    {
+        // margin-top: 20px;
+        // background-color: #000000a6;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 80%;
+        color: $verde_floresta;
+        h1{
+            font-family: $oswald;
+            letter-spacing: 2px;
+            .t_1{font-size: 15rem;
+                letter-spacing: 44px;
+                font-weight: bold;
+                color: #24A652;}
+            .t_2{    font-size: 4rem;
+                font-weight: bold;
+                line-height: 0;
+                color: #F2D027;
+                letter-spacing: 26px;}
+            .t_3{font-size: 7rem; font-weight: bold; line-height: 0; color: $verde_floresta;}
+            .t_4{    font-size: 9rem;
+                font-weight: bold;
+                line-height: 180px;
+                color: #24A652;
+                letter-spacing: 10px;}
+
+            &:hover{
+                cursor: default;
+            }
+        }
+
+        h2{
+            margin-top: 20px;
+            font-size: 2rem;
+            text-align: start;
+            color: $verde_floresta;
+            font-family: $roboto;
+            padding: 5px 32px;
+
+
+        }
+
+        .ctas{
+            // background-color: red;
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0px;
+            width: 100%;
+            height: 50px;
+
+            button{
+                background-color: transparent;
+                border: 2px $verde_floresta solid ;
+                color: $verde_floresta;
+                border-radius: 5px;
+                padding: 10px 25px;
+                font-weight: bold;
+                // border: none;
+                letter-spacing: 3px;
+                font-family: $poppins;
+            }
+        }
+    }
+
+    margin-bottom: 5000px;
+}
