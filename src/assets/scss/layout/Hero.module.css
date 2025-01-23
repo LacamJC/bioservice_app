@@ -7,7 +7,7 @@
 }
 
 .main {
-  height: 900px;
+  height: 1200px;
   width: 100%;
   color: white;
   position: relative;
@@ -48,8 +48,14 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 80%;
+  width: 70%;
   color: #24A652;
+}
+@media screen and (max-width: 768px) {
+  .main .control {
+    width: 100%;
+    margin: 0;
+  }
 }
 .main .control h1 {
   font-family: "Oswald", cursive;
@@ -91,6 +97,9 @@
   color: #24A652;
   font-family: "Roboto", cursive;
   padding: 5px 32px;
+  font-weight: 300;
+  line-height: 3.5rem;
+  margin-top: 50px;
 }
 .main .control .ctas {
   display: flex;
@@ -189,21 +198,22 @@
 }
 @media screen and (max-width: 476px) {
   .main .control h1 .t_1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
     letter-spacing: 9px;
   }
   .main .control h1 .t_2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 3px;
   }
   .main .control h1 .t_3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 1px;
     line-height: 16px;
   }
   .main .control h1 .t_4 {
-    font-size: 1.8rem;
-    line-height: 33px;
+    font-size: 2.8rem;
+    line-height: 50px;
+    letter-spacing: 0.6px;
   }
   .main .control h2 {
     margin-top: 20px;
@@ -211,7 +221,8 @@
     text-align: start;
     color: #24A652;
     font-family: "Roboto", cursive;
-    padding: 5px 0px;
+    padding: 5px 15px;
+    text-indent: 1rem;
     line-height: 30px;
   }
 }/*# sourceMappingURL=Hero.module.css.map */
