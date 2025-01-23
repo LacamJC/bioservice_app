@@ -8,8 +8,8 @@ const Hero = () =>{
                     <h1>
                         <span className={`${styles.t_1}`}>Descarte</span>
                         <br/>
-                        <span className={`${styles.t_2}`}> de Óleo de Cozinha</span>
-                        <span className={`${styles.t_3}`}>com</span>
+                        <span className={`${styles.t_2}`}> De Óleo De Cozinha</span>
+                        <span className={`${styles.t_3}`}>Com</span>
                         <br/>
                         <span className={`${styles.t_4}`}>Responsabilidade</span>
                     </h1>

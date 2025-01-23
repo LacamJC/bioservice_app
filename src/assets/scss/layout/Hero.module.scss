@@ -8,7 +8,11 @@
 
 .main
 {
-    height: 800px;
+    height: 900px;
+    @media screen and (max-width: 476px)
+    {
+        max-height: 400px;
+    }
     width: 100%;
     // background-color: red;
     color: white;
@@ -39,6 +43,7 @@
 
     .control
     {
+
         // margin-top: 20px;
         // background-color: #000000a6;
         padding-bottom: 20px;
@@ -55,18 +60,25 @@
             .t_1{font-size: 15rem;
                 letter-spacing: 44px;
                 font-weight: bold;
-                color: #24A652;}
+                color: #24A652;
+            }
             .t_2{    font-size: 4rem;
                 font-weight: bold;
                 line-height: 0;
                 color: #F2D027;
-                letter-spacing: 26px;}
-            .t_3{font-size: 7rem; font-weight: bold; line-height: 0; color: $verde_floresta;}
+                letter-spacing: 26px;
+            }
+            .t_3{
+                font-size: 7rem; font-weight: bold; line-height: 0; color: $verde_floresta;
+            }
             .t_4{    font-size: 9rem;
                 font-weight: bold;
                 line-height: 180px;
                 color: #24A652;
-                letter-spacing: 10px;}
+                letter-spacing: 10px;
+            }
+
+            
 
             &:hover{
                 cursor: default;
@@ -91,6 +103,8 @@
             margin: 20px 0px;
             width: 100%;
             height: 50px;
+            flex-wrap: wrap;
+            gap: 50px;
 
             button{
                 background-color: transparent;
@@ -102,6 +116,115 @@
                 // border: none;
                 letter-spacing: 3px;
                 font-family: $poppins;
+                width: 15rem;
+            }
+        }
+
+        @media screen and (max-width:1280px)
+        {
+            h1{
+                .t_1{font-size: 10rem;}
+            .t_2{font-size: 3rem;
+                font-weight: bold;
+                line-height: 0;
+                color: #F2D027;
+                letter-spacing: 19px;
+                padding-left: 5px;
+            }
+            .t_3{
+                font-size: 5rem;
+                font-weight: bold;
+                line-height: 0;
+                color: #24A652;
+                letter-spacing: 11px;
+            
+            }
+            .t_4{
+                font-size: 7.5rem;
+                font-weight: bold;
+                line-height: 122px;
+                color: #24A652;
+                letter-spacing: 3px;
+            }
+            }
+            
+        }
+
+        @media screen and (max-width: 920px)
+        {
+            h1{
+                .t_1{
+                    font-size: 8rem;
+                }
+                .t_2{
+                    font-size: 2rem;
+                    letter-spacing: 20px;
+                }
+                .t_3{
+                    font-size: 4rem;
+                    letter-spacing: 15px;
+                }
+                .t_4{
+                    font-size: 6.5rem;
+                }
+            }
+            
+        }
+
+        @media screen and (max-width: 769px)
+        {
+            h1{
+                .t_1{
+                    font-size: 5rem;
+                    letter-spacing: 20px;
+                }
+                .t_2{
+                    font-size: 1.5rem;
+                    letter-spacing: 8px;
+                }
+                .t_3{
+                    font-size: 3rem;
+                    letter-spacing: 5px;
+                    line-height: 21px;
+                }
+                .t_4{
+                    font-size: 3.5rem;
+                }
+            }
+            
+        }
+
+        @media screen and (max-width: 476px)
+        {
+            h1{
+                .t_1{
+                    font-size: 3rem;
+                    letter-spacing: 9px;
+                }
+                .t_2{
+                    font-size: 1rem;
+                    letter-spacing: 3px;
+                }
+                .t_3{
+                    font-size: 2rem;
+                    letter-spacing: 1px;
+                    line-height: 16px;
+                }
+                .t_4{
+                    font-size: 1.8rem;
+                    line-height: 33px;
+                }   
+            }
+            
+
+            h2{
+                margin-top: 20px;
+                font-size: 0.9rem;
+                text-align: start;
+                color: #24A652;
+                font-family: "Roboto", cursive;
+                padding: 5px 0px;
+                line-height: 30px;
             }
         }
     }
