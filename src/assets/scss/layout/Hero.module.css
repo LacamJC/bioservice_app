@@ -22,12 +22,25 @@
 
 .paragrafo {
   font-family: "Poppins", cursive;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 3rem;
   letter-spacing: 4px;
   text-align: left;
   text-indent: 1rem;
   margin-left: 15px;
+  font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+  .paragrafo {
+    font-family: "Poppins", cursive;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 4px;
+    text-align: left;
+    text-indent: 1rem;
+    margin-left: 15px;
+    font-weight: 400;
+  }
 }
 
 .bold {
@@ -50,7 +63,7 @@
 }
 
 .showTag {
-  transform: translatex(-10%);
+  transform: translatex(0%);
   opacity: 0;
   transition: 1s ease all;
 }
@@ -61,7 +74,7 @@
 }
 
 .showLeg {
-  transform: translateX(10%);
+  transform: translateX(0%);
   opacity: 0;
   transition: 1s ease all;
 }
@@ -294,7 +307,7 @@
   }
   .main .control h2 {
     margin-top: 20px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     text-align: start;
     color: #24A652;
     font-family: "Roboto", cursive;

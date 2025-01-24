@@ -89,93 +89,94 @@
 }
 
 * {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
   font-size: 100%;
 }
 
-.bg_atuacao {
-  min-height: 700px;
+.servicos {
   position: relative;
+  width: 100%;
+  min-height: 620px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   overflow: hidden;
 }
-.bg_atuacao::before {
+.servicos .servicos_titulo {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  color: white;
+  background-color: #fade54;
+  color: #24A652;
+  padding: 10px 30px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  transform: translateY(-100px);
+}
+@media screen and (max-width: 768px) {
+  .servicos .servicos_titulo {
+    font-size: 2.5rem;
+  }
+}
+.servicos::before {
   content: "";
+  z-index: -1;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  filter: blur(5px) brightness(40%);
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 0, 0, 0.404);
-  z-index: -1;
-  transform: scale(1.1);
-  background-image: url("https://oficinabrasil.com.br/uploads/images/pitstop/lwart-coleta.jpg");
+  background-image: url("../../img/galao.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: center;
 }
-.bg_atuacao h2 {
-  color: #24A652;
+.servicos .servicos_lista {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: -moz-max-content;
+  height: max-content;
+  justify-content: space-around;
+  gap: 2rem;
+  transform: translateY(75px);
+}
+.servicos .servicos_lista .item {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.servicos .servicos_lista .item .item_titulo {
   font-family: "Oswald", cursive;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 10px auto;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
 }
-.bg_atuacao h2 .t_1 {
-  font-size: 8rem;
-  letter-spacing: 5px;
-}
-.bg_atuacao h2 .t_2 {
-  font-size: 10rem;
-  letter-spacing: 23px;
-}
-.bg_atuacao .paragrafo {
-  font-size: 2rem;
-  text-align: start;
-  color: #24A652;
+.servicos .servicos_lista .item .item_paragrafo {
   font-family: "Roboto", cursive;
-  padding: 5px 32px;
-  font-weight: 300;
-  line-height: 4rem;
-  width: 80%;
-  margin: 50px auto;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+  text-indent: 1rem;
+  color: white;
+  text-align: center;
 }
-.bg_atuacao .info {
-  color: #fade54;
-  padding: 10px 20px;
-  font-weight: 500;
-}
-@media screen and (max-width: 790px) {
-  .bg_atuacao h2 .t_1 {
-    font-size: 6rem;
-    letter-spacing: 5px;
-  }
-  .bg_atuacao h2 .t_2 {
-    font-size: 8rem;
-    letter-spacing: 23px;
+@media screen and (max-width: 800px) {
+  .servicos .servicos_lista .item {
+    height: -moz-max-content;
+    height: max-content;
   }
 }
 @media screen and (max-width: 500px) {
-  .bg_atuacao h2 .t_1 {
-    font-size: 4rem;
-    letter-spacing: 4px;
+  .servicos .servicos_lista .item {
+    transform: scale(0.8);
   }
-  .bg_atuacao h2 .t_2 {
-    font-size: 5rem;
-    letter-spacing: 13px;
-  }
-  .bg_atuacao .paragrafo {
-    font-size: 1.2rem;
-    text-align: start;
-    color: #24A652;
-    font-family: "Roboto", cursive;
-    padding: 10px 0px;
-    font-weight: 300;
-    line-height: 2.5rem;
-    width: 80%;
-    margin: 50px 24px;
-  }
-}/*# sourceMappingURL=Sobre.module.css.map */
+}/*# sourceMappingURL=Servicos.module.css.map */
