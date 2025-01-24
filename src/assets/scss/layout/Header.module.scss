@@ -55,6 +55,12 @@
                 font-weight: bold;
                 letter-spacing: 4px;
             }
+
+            .list_link
+            {
+                color: $verde_floresta;
+                text-decoration: none;
+            }
         }
     }
 
@@ -177,6 +183,12 @@
                     color: $verde_floresta;
                     font-weight: bold;
                     letter-spacing: 4px;
+
+                    .list_link
+                    {
+                        color: $verde_floresta;
+                        text-decoration: none;
+                    }
                 }
             }
            

@@ -20,7 +20,7 @@ const Sobre = () =>{
         elementos.forEach(function(elemento) {
             if (isVisible(elemento)) {
                 elemento.classList.add(`${styles.visivel}`);
-                console.log('elemento visivel')
+                // console.log('elemento visivel')
             } else {
                 // elemento.classList.remove('visivel');
             }

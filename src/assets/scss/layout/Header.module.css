@@ -3,6 +3,7 @@
   margin: 100px auto;
   padding: 50px 0px;
   margin-bottom: 150px;
+  padding-top: 150px;
 }
 
 .subTitulo {
@@ -116,6 +117,10 @@
   font-weight: bold;
   letter-spacing: 4px;
 }
+.cabecalho .navBar .navBar_list .list_link {
+  color: #24A652;
+  text-decoration: none;
+}
 .cabecalho .cta_coleta {
   height: 50px;
   padding: 5px 10px;
@@ -200,6 +205,10 @@
     color: #24A652;
     font-weight: bold;
     letter-spacing: 4px;
+  }
+  .cabecalho .hidden_navBar .navBar_list .list_item .list_link {
+    color: #24A652;
+    text-decoration: none;
   }
   .cabecalho .show {
     transform: translateX(100%);
