@@ -46,11 +46,11 @@ const Sobre = () =>{
         <>
             <article className={`${styles.artigo} container`} id="sobreNos" >
                 <div className="row w-100 m-auto mb-5">
-                    <div className={`col col-12 col-md-6 bg-succdess ${styles.showTag}`}>
-                    <h2 className={`${styles.subTitulo}`}>
+                    <div className={`col col-12 col-md-6 bg-succdess `}>
+                    <h2 className={`${styles.subTitulo} ${styles.showTag}`}>
                     SOBRE A BIOSERVICE AMBIENTAL 
                     </h2>
-                        <p className={`${styles.paragrafo} `}>
+                        <p className={`${styles.paragrafo} ${styles.showLeg} `}>
                             A <span className={`${styles.bold}`}>Bioservice Ambiental</span> é especializada em <span className={`${styles.italic}`}>reciclagem</span> e coleta de resíduos, com foco na <span className={`${styles.italic}`}>sustentabilidade</span> e na proteção do <span className={`${styles.italic}`}>meio ambeinte</span>
                         </p>
 
