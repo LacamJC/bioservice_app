@@ -71,14 +71,19 @@
                 font-weight: bold;
                 color: #24A652;
             }
-            .t_2{    font-size: 4rem;
+            .t_2{    
+                font-size: 5rem;
                 font-weight: bold;
                 line-height: 0;
                 color: #F2D027;
-                letter-spacing: 26px;
+                letter-spacing: 30px;
             }
             .t_3{
-                font-size: 7rem; font-weight: bold; line-height: 0; color: $verde_floresta;
+                font-size: 7rem;
+                font-weight: bold;
+                line-height: .7;
+                color: $verde_floresta;
+                letter-spacing: 10px;
             }
             .t_4{    font-size: 9rem;
                 font-weight: bold;
@@ -156,8 +161,9 @@
         @media screen and (max-width:1280px)
         {
             h1{
-                .t_1{font-size: 10rem;}
-            .t_2{font-size: 3rem;
+            .t_1{
+                font-size: 8.5rem;}
+            .t_2{font-size: 3.3rem;
                 font-weight: bold;
                 line-height: 0;
                 color: #F2D027;
@@ -167,13 +173,13 @@
             .t_3{
                 font-size: 5rem;
                 font-weight: bold;
-                line-height: 0;
+                line-height: 30px;
                 color: #24A652;
                 letter-spacing: 11px;
             
             }
             .t_4{
-                font-size: 7.5rem;
+                font-size: 6.35rem;
                 font-weight: bold;
                 line-height: 122px;
                 color: #24A652;
@@ -212,8 +218,8 @@
                     letter-spacing: 20px;
                 }
                 .t_2{
-                    font-size: 1.5rem;
-                    letter-spacing: 8px;
+                    font-size: 2.5rem;
+                    letter-spacing: 4.5px;
                 }
                 .t_3{
                     font-size: 3rem;
@@ -222,6 +228,7 @@
                 }
                 .t_4{
                     font-size: 3.5rem;
+                    line-height: 1.2;
                 }
             }
             
@@ -235,7 +242,7 @@
                     letter-spacing: 9px;
                 }
                 .t_2{
-                    font-size: 1.5rem;
+                    font-size: 1.9rem;
                     letter-spacing: 3px;
                 }
                 .t_3{
@@ -264,6 +271,4 @@
             }
         }
     }
-
-    margin-bottom: 5000px;
 }

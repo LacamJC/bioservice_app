@@ -8,3 +8,90 @@ $branco: #FFFCFF;
 $oswald: "Oswald", cursive;
 $roboto: "Roboto", cursive;
 $poppins:  "Poppins", cursive;
+
+
+
+.artigo
+{
+    // border: 1px solid rgba(0, 0, 0, 0.274);
+    margin: 100px auto;
+    padding: 50px 0px;
+    margin-bottom: 150px;
+}
+
+.subTitulo
+{
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-family: $oswald;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    background-color: $verde_floresta;
+    width: fit-content;
+    padding: 15px 24px;
+    color: white;
+    // border-radius: 0px 100px 101px 0px;
+
+}
+
+.paragrafo
+{
+    font-family: $poppins;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    letter-spacing: 4px;
+    text-align: left;
+    text-indent: 1rem;
+    margin-left: 15px;
+}
+
+.bold
+{
+    font-weight: bold;
+    color: $verde_floresta;
+}
+
+.fontAmarelo
+{
+    color: $branco;
+    letter-spacing: 5px;
+    font-weight: bold;
+    padding: 10px 10px;
+    // font-weight: 300;
+    font-family: $poppins;
+    background-color: $verde_floresta;
+}
+
+.italic{
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+.showTag
+{
+    transform: translatex(-10%); 
+    @media screen and (max-width: 768px)
+    {
+        transform: translatex(-2%)
+    }
+    opacity: 0;
+    transition: 1s ease all;
+}
+
+.showLeg
+{
+    transform: translateX(10%); 
+    @media screen and (max-width: 768px)
+    {
+        transform: translatex(-2%)
+    }
+    opacity: 0;
+    transition: 1s ease all;
+}
+
+.visivel
+{
+    transform: translateX(0%);
+    opacity: 1;
+}

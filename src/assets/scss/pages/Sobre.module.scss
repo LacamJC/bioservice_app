@@ -1,0 +1,113 @@
+@import '../variables';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+}
+
+
+.bg_atuacao
+{
+    // background-color: red;
+    min-height: 700px;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        filter: blur(5px) brightness(40%);
+
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 0, 0, 0.404);
+        z-index: -1;
+        transform: scale(1.1);
+
+        background-image: url('https://oficinabrasil.com.br/uploads/images/pitstop/lwart-coleta.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+
+    h2{
+        color: $verde_floresta;
+        font-family: $oswald;
+        // background-color: red;
+        width: max-content;
+        margin: 10px auto;
+        .t_1{
+            font-size: 8rem;
+            letter-spacing: 5px;
+        }
+        .t_2{
+            font-size: 10rem;
+            letter-spacing: 23px;
+        }
+    }
+
+    .paragrafo
+    {
+        font-size: 2rem;
+        text-align: start;
+        color: #24A652;
+        font-family: "Roboto", cursive;
+        padding: 5px 32px;
+        font-weight: 300;
+        line-height: 4rem;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .info{
+        // background-color: rgba(0, 0, 0, 0.74);
+        color: $amarelo_ouro;
+        padding: 10px 20px;
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: 790px)
+    {
+        h2{
+            .t_1{
+                font-size: 6rem;
+                letter-spacing: 5px;
+            }
+            .t_2{
+                font-size: 8rem;
+                letter-spacing: 23px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px)
+    {
+        h2{
+            .t_1{
+                font-size: 4rem;
+                letter-spacing: 4px;
+            }
+            .t_2{
+                font-size: 5rem;
+                letter-spacing: 13px;
+            }
+        }
+
+        .paragrafo{
+            font-size: 1.2rem;
+            text-align: start;
+            color: #24A652;
+            font-family: "Roboto", cursive;
+            padding: 10px 0px;
+            font-weight: 300;
+            line-height: 2.5rem;
+            width: 80%;
+            margin: 50px 24px;
+        }
+    }
+}
