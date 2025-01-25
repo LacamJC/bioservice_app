@@ -1,0 +1,47 @@
+@import '../variables';
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.card{
+    background-color: #24a65256;
+    width: 400px;
+    @media screen and (max-width: 978px)
+    {
+        width: 100%;
+        margin: 50px 0px;
+    }
+    border-radius: 5px;
+    padding-bottom: 15px;
+    margin: 50px;
+    
+
+    h3{
+        background-color: $verde_floresta;
+        color: white;
+        border-radius: 5px 5px 0px 0px;
+        padding: 14px;
+    }
+
+    p{
+        padding: 0px 15px;
+        font-size: 1.2rem;
+        font-family: $poppins;
+    }
+    
+    ul{
+        list-style-type: circle;
+        li{
+            font-size: 1rem;
+            font-family: $poppins;
+            color: $verde_floresta;
+            font-weight: bold;
+            margin: 30px 0px;
+        }
+    }
+}
+
+
+

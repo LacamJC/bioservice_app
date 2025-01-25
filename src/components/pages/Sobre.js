@@ -82,36 +82,36 @@ const Sobre = () =>{
             </article>
 
             <article className={`${styles.artigo} ${styles.voceSabia} container`}>
-                <h3 className={`text-center ${styles.subTitulo}`}>Você Sabia ?</h3>
+                <h3 className={`text-center ${styles.subTitulo} ${styles.showTag}`}>Você Sabia ?</h3>
                 <div className={`${styles.dykLista}`}>
-                    <div className={`${styles.dykItem}`}>
+                    <div className={`${styles.dykItem} `}>
                         
                         
-                        <div className={`${styles.icon}`}>
+                        <div className={`${styles.icon} ${styles.showTag}`}>
                         <img src={vetor_garrafa} alt={`<div> Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang"> surang </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>`}/>
                         </div>
-                        <p className={`${styles.paragrafo}`}>
+                        <p className={`${styles.paragrafo} ${styles.showTag}`}>
                             Quando o óleo é reutilizado muitas vezes, suas moléculas se quebram, criando substâncias tóxicas que aumentam os riscos de doenças como câncer, além de sobrecarregar o sistema cardiovascular e prejudicar a saúde em geral.
                         </p>
 
                         
                     </div>
-                    <div className={`${styles.dykItem}`}>
+                    <div className={`${styles.dykItem} `}>
                         
 
-                        <div className={`${styles.icon}`}>
+                        <div className={`${styles.icon} ${styles.showTag}`}>
                             <img src={vetor_certificado} alt={`<div> Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"> Smashicons </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>`}/>
                         </div>
-                        <p className={`${styles.paragrafo}`}>
+                        <p className={`${styles.paragrafo} ${styles.showTag}`}>
                             De acordo com a legislação ambiental, restaurantes, lanchonetes e outros estabelecimentos precisam garantir que o óleo de cozinha usado seja descartado de forma responsável e obter um Certificado de Destinação Final para comprovar que o material foi corretamente reciclado ou tratado.
                         </p>
                     </div>
-                    <div className={`${styles.dykItem}`}>
+                    <div className={`${styles.dykItem} `}>
                         
-                        <div className={`${styles.icon}`}>
+                        <div className={`${styles.icon} ${styles.showTag}`}>
                             <img src={vetor_barril} alt={`<div> Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26"> Icongeek26 </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>`}/>
                         </div>
-                        <p className={`${styles.paragrafo}`}>
+                        <p className={`${styles.paragrafo} ${styles.showTag}`}>
                             Apenas 1 litro de óleo de cozinha jogado de forma inadequada pode poluir uma quantidade de água suficiente para abastecer 30 famílias durante um mês. O óleo forma uma camada na superfície da água que impede a troca de gases essenciais, prejudicando a vida aquática.
                         </p>
                     </div>
@@ -122,42 +122,44 @@ const Sobre = () =>{
             
 
             <article className={`${styles.artigo} container`}>
-            <h3 className={`${styles.subTitulo}`}>CERTIFICADO AMBIENTAL</h3>
+            
 
                     <div className={`row w-100 mx-auto mb-5`}>
-                        <div className={`col col-12 col-md-8`}>
-                            <p className={`${styles.paragrafo}`}>Oferecemos uma solução completa para empresas e estabelecimentos que buscam estar em conformidade com as <span className={`${styles.bold}`}>legislações ambientais</span> vigentes. Ao trabalhar conosco, sua empresa terá acesso a um <span className={`${styles.bold}`}>Certificado Ambiental</span>, um documento oficial que atesta a destinação correta e ambientalmente responsável dos resíduos, como o <span>óleo de cozinha</span>.</p>
+                        <div className={`col col-12 col-md-8 mb-5 `}>
+                        <h3 className={`${styles.subTitulo} ${styles.showTag}`}>CERTIFICADO AMBIENTAL</h3>
+                            <p className={`${styles.paragrafo} ${styles.showTag}`}>Oferecemos uma solução completa para empresas e estabelecimentos que buscam estar em conformidade com as <span className={`${styles.bold}`}>legislações ambientais</span> vigentes. Ao trabalhar conosco, sua empresa terá acesso a um <span className={`${styles.bold}`}>Certificado Ambiental</span>, um documento oficial que atesta a destinação correta e ambientalmente responsável dos resíduos, como o <span>óleo de cozinha</span>.</p>
 
-                            <div className={`${styles.button}`}>
+                            <div className={`${styles.button} ${styles.showTag}`}>
                                 Garanta já o seu 
                             </div>
 
                         </div>
-                        <div className={`col col-12 col-md-4`}>
-                            <img src={iso_logo} alt="imagem da iso 1401 normas ambientais"/>
+                        <div className={`col col-12 col-md-4 ${styles.showTag}` }>
+                            <img src={iso_logo} alt="imagem da iso 1401 normas ambientais" width="80%"/>
+                           
                         </div>
                     </div>
             
 
-                    <h3 className={`${styles.subTitulo} mx-auto`}>NOSSAS CERTIFICAÇÕES</h3>
+                    <h3 className={`${styles.subTitulo} mx-auto ${styles.showTag}`}>NOSSAS CERTIFICAÇÕES</h3>
                     <div className={`${styles.empresas_list}`}>
-                        <div className={`${styles.list_item}`}>
+                        <div className={`${styles.list_item} ${styles.showLeg}`}>
                             <img src={sabesp_logo} alt="logo da sabesp"/>
                         </div>
-                        <div className={`${styles.list_item}`}>
+                        <div className={`${styles.list_item} ${styles.showLeg}`}>
                             <img src={ibama_logo} alt="logo do ibama"/>
                         </div>
-                        <div className={`${styles.list_item}`}>
+                        <div className={`${styles.list_item} ${styles.showLeg}`}>
                             <img src={cetebesp_logo} alt="logo da cetebesp"/>
                         </div>
-                        <div className={`${styles.list_item}`}>
+                        <div className={`${styles.list_item} ${styles.showLeg}`}>
                             <img src={bombeiro_logo} alt="logo do corpo de bombeiros"/>
                         </div>
-                        <div className={`${styles.list_item}`}>
+                        <div className={`${styles.list_item} ${styles.showLeg}`}>
                             <img src={anvisa_logo} alt="logo da anvisa"/>
                         </div>
                     </div>
-                    <p className={`${styles.paragrafo}`}>Este certificado é uma ferramenta essencial para garantir que o seu negócio esteja em conformidade com as normas ambientais, evitando possíveis multas ou penalidades. Ele também reforça o compromisso da sua empresa com a responsabilidade socioambiental, o que é altamente valorizado por clientes, parceiros e órgãos reguladores.</p>
+                    <p className={`${styles.paragrafo} ${styles.showTag}`}>Este certificado é uma ferramenta essencial para garantir que o seu negócio esteja em conformidade com as normas ambientais, evitando possíveis multas ou penalidades. Ele também reforça o compromisso da sua empresa com a responsabilidade socioambiental, o que é altamente valorizado por clientes, parceiros e órgãos reguladores.</p>
             </article>
 
             

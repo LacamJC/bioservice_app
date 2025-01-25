@@ -56,9 +56,9 @@ const Hero = () =>{
                     </h1>
                     <h2>A Bioservice Ambiental oferece soluções eficientes para o descarte de óleo de cozinha. Contribua com o meio ambiente e cumpra com a legislação ambiental.</h2>
 
-                    <div className={`${styles.ctas} ${styles.showTag}`}>
-                        <button>Solicite Agora</button>
-                        <button>Saiba Mais</button>
+                    <div className={`${styles.ctas}`}>
+                        <button className={`${styles.showTag}`}>Solicite Agora</button>
+                        <button className={`${styles.showTag}`}>Saiba Mais</button>
                     </div>
                 </div>
               

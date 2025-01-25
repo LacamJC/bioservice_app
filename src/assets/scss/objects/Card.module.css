@@ -119,83 +119,41 @@
 }
 
 * {
-  padding: 0px;
   margin: 0px;
-  font-size: 100%;
+  padding: 0px;
 }
 
-.bg_tuned {
-  min-height: 700px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card {
+  background-color: rgba(36, 166, 82, 0.337254902);
+  width: 400px;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  margin: 50px;
 }
-.bg_tuned h2 {
-  color: #24A652;
-  font-family: "Oswald", cursive;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 10px auto;
-}
-.bg_tuned .t_1 {
-  font-size: 12rem;
-  letter-spacing: 37px;
-}
-.bg_tuned .t_2 {
-  font-size: 10rem;
-  letter-spacing: 23px;
-}
-@media screen and (max-width: 800px) {
-  .bg_tuned .t_1 {
-    font-size: 7rem;
-    letter-spacing: 37px;
-  }
-  .bg_tuned .t_2 {
-    font-size: 6rem;
-    letter-spacing: 24px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .bg_tuned .t_1 {
-    font-size: 6rem;
-    letter-spacing: 3px;
-  }
-  .bg_tuned .t_2 {
-    font-size: 2rem;
-    letter-spacing: 27px;
-  }
-}
-.bg_tuned::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  filter: blur(5px) brightness(40%);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 0, 0, 0.404);
-  z-index: -1;
-  transform: scale(1.1);
-  background-image: url(https://oficinabrasil.com.br/uploads/images/pitstop/lwart-coleta.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-
-.servicos .servicos_titulo {
-  color: #24A652;
-  font-weight: 700;
-  font-family: "Oswald", cursive;
-  letter-spacing: 5px;
-  font-size: 1.7rem;
-}
-@media screen and (max-width: 768px) {
-  .servicos .item_titulo {
+@media screen and (max-width: 978px) {
+  .card {
     width: 100%;
-    text-align: left;
+    margin: 50px 0px;
   }
-}/*# sourceMappingURL=Servicos.module.css.map */
+}
+.card h3 {
+  background-color: #24A652;
+  color: white;
+  border-radius: 5px 5px 0px 0px;
+  padding: 14px;
+}
+.card p {
+  padding: 0px 15px;
+  font-size: 1.2rem;
+  font-family: "Poppins", cursive;
+}
+.card ul {
+  list-style-type: circle;
+}
+.card ul li {
+  font-size: 1rem;
+  font-family: "Poppins", cursive;
+  color: #24A652;
+  font-weight: bold;
+  margin: 30px 0px;
+}/*# sourceMappingURL=Card.module.css.map */

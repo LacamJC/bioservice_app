@@ -45,7 +45,7 @@ $poppins:  "Poppins", cursive;
 
     @media screen and (max-width: 567px)
     {
-        font-size: 1.5rem;
+        font-size: 2.4rem;
     }
 
 }
@@ -54,8 +54,8 @@ $poppins:  "Poppins", cursive;
 {
     font-family: $roboto;
     font-size: 1.2rem;
-    line-height: 2.5rem;
-    letter-spacing: 3px;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
     text-align: left;
     text-indent: 1rem;
     margin-left: 15px;
@@ -64,7 +64,7 @@ $poppins:  "Poppins", cursive;
     @media screen and (max-width: 768px)
     {
         font-family: $roboto;
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 2rem;
         letter-spacing: 4px;
         text-align: left;
