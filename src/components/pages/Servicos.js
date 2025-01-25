@@ -39,29 +39,55 @@ const Servicos = () => {
     
     // Chame addClass() para verificar se os elementos já estão visíveis na página inicialmente
     addClass();
+
+
+
+
     return(
         <>
-            <article className={`${styles.artigo} ${styles.servicos} ${styles.showTag}`}>
-                <h2 className={`  ${styles.servicos_titulo}`}>Nosso Serviços</h2>
+            <article className={`${styles.artigo} ${styles.servicos} container `} id="servicos">
+                <h2 className={`${styles.subTitulo} text-center mb-5 w-100 `}>Nosso Serviços</h2>
+                
+                <div className="row w-100">
 
-                <div className={`${styles.servicos_lista}`}>
-                    <div className={`${styles.item} ${styles.i_1}`}>
-                        <h3 className={`${styles.item_titulo}`}>COLETA</h3>
-                        <p className={`${styles.item_paragrafo}`}>
-                            Coletamos seu óleo em até 48 horas após o seu chamado.
+                    <div className="col col-md-6 col-12">
+                        <h3 className={` ${styles.servicos_titulo} mx-auto text-center w-50`}>Coleta</h3>
+                        <p className={`${styles.paragrafo} `}>
+                            Com o seu chamado, mobilizamos nossa equipe em até 24 horas para fazer a retirada do seu óleo.
+                        </p>
+                        <p className={`${styles.paragrafo}`}>
+                            Nossa equipe conta com profissionais extremamente eficientes e confiaveis, sempre dispostos a tirar dúvidas e auxiliar nossos clientes para garantir a total satisfação.
                         </p>
                     </div>
-                    <div className={`${styles.item} ${styles.i_2}`}>
-                        <h3 className={`${styles.item_titulo}`}>TRATAMENTO E DESTINO</h3>
-                        <p className={`${styles.item_paragrafo}`}>
-                            Asseguramos um tratamento seguro e ambientalmente correto de todos os resíduos, desde a coleta até a destinação final em locais licenciados.
+                    <div className={`col col-md-6 col-12 d-flex justify-content-center align-items-center`}>
+                        {/* <ReactPlayer
+                            url="https://youtu.be/m4FfO-Wvn7c?si=fdsqNvzRJWE9f-hC"
+                            width={'100%'}
+                            volume={volume}
+                            controls='true'
+                        />
+                        */}
+                        
+                    </div>
+
+                    <div className="col col-md-8 col-12">
+                        <h3 className={` ${styles.servicos_titulo} mx-auto text-center w-50`}>Tratamento e Destinação Final</h3>
+                        <p className={`${styles.paragrafo} `}>
+                            Com o seu chamado, mobilizamos nossa equipe em até 24 horas para fazer a retirada do seu óleo.
+                        </p>
+                        <p className={`${styles.paragrafo}`}>
+                            Nossa equipe conta com profissionais extremamente eficientes e confiaveis, sempre dispostos a tirar dúvidas e auxiliar nossos clientes para garantir a total satisfação.
                         </p>
                     </div>
-                    <div className={`${styles.item} ${styles.i_3}`}>
-                        <h3 className={`${styles.item_titulo}`}>CONSULTORIA</h3>
-                        <p className={`${styles.item_paragrafo}`}>
-                            Precisa de orientação para implementar práticas mais sustentáveis na sua empresa? Conte com nossa consultoria especializada em gestão de resíduos.
-                        </p>
+                    <div className={`col col-md-4 col-12 d-flex justify-content-center align-items-center`}>
+                        {/* <ReactPlayer
+                            url="https://youtu.be/m4FfO-Wvn7c?si=fdsqNvzRJWE9f-hC"
+                            width={'100%'}
+                            volume={volume}
+                            controls='true'
+                        />
+                        */}
+                        
                     </div>
                 </div>
             </article>

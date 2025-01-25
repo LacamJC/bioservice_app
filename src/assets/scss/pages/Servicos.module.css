@@ -1,37 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .artigo {
-  margin: 100px auto;
+  margin: 0px auto;
   padding: 50px 0px;
-  margin-bottom: 150px;
   padding-top: 150px;
+  margin-bottom: 0px;
 }
 
 .subTitulo {
-  font-size: 1.8rem;
+  font-size: 3.5rem;
   letter-spacing: 2px;
   font-family: "Oswald", cursive;
   font-weight: bold;
   margin-bottom: 2rem;
-  background-color: #24A652;
   width: -moz-fit-content;
   width: fit-content;
   padding: 15px 24px;
-  color: white;
+  color: #24A652;
+  position: relative;
+}
+.subTitulo::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fade54;
+  z-index: -1;
+}
+@media screen and (max-width: 567px) {
+  .subTitulo {
+    font-size: 1.5rem;
+  }
 }
 
 .paragrafo {
-  font-family: "Poppins", cursive;
-  font-size: 1.4rem;
-  line-height: 3rem;
-  letter-spacing: 4px;
+  font-family: "Roboto", cursive;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  letter-spacing: 3px;
   text-align: left;
   text-indent: 1rem;
   margin-left: 15px;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (max-width: 768px) {
   .paragrafo {
-    font-family: "Poppins", cursive;
+    font-family: "Roboto", cursive;
     font-size: 1rem;
     line-height: 2rem;
     letter-spacing: 4px;
@@ -88,95 +100,40 @@
   opacity: 1;
 }
 
+.button {
+  width: 300px;
+  height: 56px;
+  background-color: #24A652;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5098039216);
+}
+.button:hover {
+  cursor: pointer;
+}
+
 * {
   padding: 0px;
   margin: 0px;
   font-size: 100%;
 }
 
-.servicos {
-  position: relative;
-  width: 100%;
-  min-height: 620px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-}
 .servicos .servicos_titulo {
-  font-size: 3rem;
-  letter-spacing: 5px;
-  color: white;
-  background-color: #fade54;
   color: #24A652;
-  padding: 10px 30px;
-  width: -moz-max-content;
-  width: max-content;
-  margin: auto;
-  transform: translateY(-100px);
+  font-weight: 700;
+  font-family: "Oswald", cursive;
+  letter-spacing: 5px;
+  font-size: 2.4rem;
 }
 @media screen and (max-width: 768px) {
-  .servicos .servicos_titulo {
-    font-size: 2.5rem;
-  }
-}
-.servicos::before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../../img/galao.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.servicos .servicos_lista {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  height: -moz-max-content;
-  height: max-content;
-  justify-content: space-around;
-  gap: 2rem;
-  transform: translateY(75px);
-}
-.servicos .servicos_lista .item {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-}
-.servicos .servicos_lista .item .item_titulo {
-  font-family: "Oswald", cursive;
-  font-size: 1.6rem;
-  text-align: center;
-  color: white;
-}
-.servicos .servicos_lista .item .item_paragrafo {
-  font-family: "Roboto", cursive;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: 2px;
-  text-indent: 1rem;
-  color: white;
-  text-align: center;
-}
-@media screen and (max-width: 800px) {
-  .servicos .servicos_lista .item {
-    height: -moz-max-content;
-    height: max-content;
-  }
-}
-@media screen and (max-width: 500px) {
-  .servicos .servicos_lista .item {
-    transform: scale(0.8);
+  .servicos .item_titulo {
+    width: 100%;
+    text-align: left;
   }
 }/*# sourceMappingURL=Servicos.module.css.map */

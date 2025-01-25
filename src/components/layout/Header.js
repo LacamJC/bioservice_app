@@ -26,12 +26,13 @@ const Header = () =>{
         <>
             <header className={`${styles.cabecalho}`}>
             
-                <img className={`${styles.logo}`} src={logo}/>
+                
+                <img className={`${styles.logo}`} src={logo} width={'80%'}/>
 
                 <nav className={`${styles.navBar}`}>
                     <ul className={`${styles.navBar_list}`} >
                         <li className={`${styles.list_item}`} >
-                            <a href="/"  className={`${styles.list_link}`}>Home</a>
+                            <a href="#home"  className={`${styles.list_link}`}>Home</a>
                         </li>
                         <li className={`${styles.list_item}`} id="teste">
                             <a href="#servicos"className={`${styles.list_link}`}>Serviços</a>
@@ -54,7 +55,7 @@ const Header = () =>{
                 <nav className={`${styles.hidden_navBar} ${showMenu?`${styles.show}`:`${styles.hidden}`}`}>
                 <ul className={`${styles.navBar_list} `}>
                         <li className={`${styles.list_item}`}>
-                            <a href="/" className={`${styles.list_link}`} onClick={closeMenu}>Home</a>
+                            <a href="#home" className={`${styles.list_link}`} onClick={closeMenu}>Home</a>
                         </li>
                         <li className={`${styles.list_item}`}>
                             <a href="#servicos" className={`${styles.list_link}`} onClick={closeMenu}>Serviços</a>

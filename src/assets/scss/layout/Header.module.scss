@@ -23,11 +23,19 @@
     padding: 10px 20px;
     
 
+
     
     // border: 1px solid black;
     border-bottom: 1px solid black;
+    
     .logo{
         height: 80%;
+        width: max-content;
+
+        @media screen and (min-width: 768px)
+        {
+            transform: translateX(30px);
+        }
     }
 
     .navBar
