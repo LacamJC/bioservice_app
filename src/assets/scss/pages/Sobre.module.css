@@ -153,14 +153,15 @@
   width: -moz-max-content;
   width: max-content;
   margin: 10px auto;
+  font-weight: bold;
 }
 .bg_atuacao h2 .t_1 {
-  font-size: 8rem;
+  font-size: 6rem;
   letter-spacing: 5px;
 }
 .bg_atuacao h2 .t_2 {
-  font-size: 10rem;
-  letter-spacing: 23px;
+  font-size: 5.5rem;
+  letter-spacing: 40px;
 }
 .bg_atuacao .paragrafo {
   font-size: 2rem;
@@ -180,22 +181,22 @@
 }
 @media screen and (max-width: 790px) {
   .bg_atuacao h2 .t_1 {
-    font-size: 6rem;
+    font-size: 5rem;
     letter-spacing: 5px;
   }
   .bg_atuacao h2 .t_2 {
-    font-size: 8rem;
-    letter-spacing: 23px;
+    font-size: 4.6rem;
+    letter-spacing: 32px;
   }
 }
 @media screen and (max-width: 500px) {
   .bg_atuacao h2 .t_1 {
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 4px;
   }
   .bg_atuacao h2 .t_2 {
-    font-size: 5rem;
-    letter-spacing: 13px;
+    font-size: 3.2rem;
+    letter-spacing: 14px;
   }
   .bg_atuacao .paragrafo {
     font-size: 1.2rem;

@@ -56,8 +56,8 @@ const Sobre = () =>{
         <>
             <article className={`${styles.artigo} ${styles.bg_atuacao}`}>
                 <h2>
-                    <span className={`${styles.t_1} ${styles.showLeg}`}>20+ ANOS DE</span> 
-                    <br/><span className={`${styles.t_2} ${styles.showLeg}`}> ATUAÇÂO</span>
+                    <span className={`${styles.t_1} ${styles.showTag}`}>20+ ANOS DE</span> 
+                    <br/><span className={`${styles.t_2} ${styles.showTag}`}> ATUAÇÂO</span>
                 </h2>
                 <p className={`${styles.paragrafo} ${styles.showLeg}`}>
                             Contamos com mais de duas décadas de serviço prestado, ao longo de todo esse tempo já ajudamos a reciclar mais de <span className={`${styles.info}`}>17 Milhões de Litros de Óleo</span>

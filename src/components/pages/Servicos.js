@@ -93,7 +93,7 @@ const Servicos = () => {
     return(
         <>
         <div className={`${styles.bg_tuned}`}>
-            <h2 className={`${styles.showTag}`}><span className={`${styles.t_1}`}>NOSSOS</span><br/> <span className={`${styles.t_2}`}>SERVIÇOS</span></h2>
+            <h2><span className={`${styles.t_1} ${styles.showTag}`}>NOSSOS</span><br/> <span className={`${styles.t_2} ${styles.showTag}`}>SERVIÇOS</span></h2>
         </div>
             <article className={`${styles.artigo} ${styles.servicos} container ${styles.showTag}`} id="servicos">
                 
@@ -107,6 +107,7 @@ const Servicos = () => {
                         titulo={servico.titulo}
                         texto={servico.texto}
                         items={servico.itens}
+                     
                     />
                 ))}
             </div>

@@ -8,7 +8,7 @@
 
 .cabecalho
 {
-    @media screen and (min-width:922px)
+    @media screen and (min-width:1040px)
     {
         .menu_controls, .hidden_navBar{
             display: none;
@@ -26,7 +26,7 @@
 
     
     // border: 1px solid black;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
     
     .logo{
         height: 80%;
@@ -101,7 +101,7 @@
 
 
    
-    @media screen and (max-width:920px)
+    @media screen and (max-width:1030px)
     {
         position: sticky;
         top: 0;

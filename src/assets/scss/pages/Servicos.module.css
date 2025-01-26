@@ -125,7 +125,9 @@
 }
 
 .bg_tuned {
-  min-height: 700px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 150px 0px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -138,33 +140,34 @@
   width: -moz-max-content;
   width: max-content;
   margin: 10px auto;
+  font-weight: bold;
 }
-.bg_tuned .t_1 {
-  font-size: 12rem;
-  letter-spacing: 37px;
+.bg_tuned h2 .t_1 {
+  font-size: 6rem;
+  letter-spacing: 35px;
 }
-.bg_tuned .t_2 {
-  font-size: 10rem;
+.bg_tuned h2 .t_2 {
+  font-size: 5rem;
   letter-spacing: 23px;
 }
 @media screen and (max-width: 800px) {
-  .bg_tuned .t_1 {
-    font-size: 7rem;
+  .bg_tuned h2 .t_1 {
+    font-size: 6rem;
     letter-spacing: 37px;
   }
-  .bg_tuned .t_2 {
-    font-size: 6rem;
-    letter-spacing: 24px;
+  .bg_tuned h2 .t_2 {
+    font-size: 5rem;
+    letter-spacing: 27px;
   }
 }
 @media screen and (max-width: 500px) {
-  .bg_tuned .t_1 {
-    font-size: 6rem;
+  .bg_tuned h2 .t_1 {
+    font-size: 3.5rem;
     letter-spacing: 3px;
   }
-  .bg_tuned .t_2 {
+  .bg_tuned h2 .t_2 {
     font-size: 2rem;
-    letter-spacing: 27px;
+    letter-spacing: 8px;
   }
 }
 .bg_tuned::before {

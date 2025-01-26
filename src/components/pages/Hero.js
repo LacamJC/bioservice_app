@@ -1,4 +1,4 @@
-import styles from '../../assets/scss/layout/Hero.module.css'
+import styles from '../../assets/scss/pages/Hero.module.css'
 import { useEffect } from 'react';
 const Hero = () =>{
     function isVisible(element) {

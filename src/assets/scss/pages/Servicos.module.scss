@@ -8,7 +8,8 @@
 }
 
 .bg_tuned{
-    min-height: 700px;
+    height: max-content;
+    padding: 150px 0px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -20,44 +21,44 @@
         font-family: $oswald;
         width: max-content;
         margin: 10px auto;
-    }
+        font-weight: bold;
     
 
     .t_1{
-        font-size: 12rem;
-        letter-spacing: 37px;
+        font-size: 6rem;
+        letter-spacing: 35px;
     }
     .t_2{
-        font-size: 10rem;
+        font-size: 5rem;
         letter-spacing: 23px;
     }
 
     @media screen and (max-width:800px)
     {
         .t_1{
-            font-size: 7rem;
+            font-size: 6rem;
             letter-spacing: 37px;
         }
 
         .t_2{
-            font-size: 6rem;
-            letter-spacing: 24px;
+            font-size: 5rem;
+            letter-spacing: 27px;
         }
     }
 
     @media screen and (max-width: 500px)
     {
         .t_1{
-            font-size: 6rem;
+            font-size: 3.5rem;
             letter-spacing: 3px;
         }
 
         .t_2{
             font-size: 2rem;
-            letter-spacing: 27px;
+            letter-spacing: 8px;
         }
     }
-
+    }
     &::before{
         content: "";
         position: absolute;

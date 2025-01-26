@@ -1,20 +1,29 @@
 import styles from '../../assets/scss/pages/Contato.module.css'
 import bioservice_logo from '../../assets/img/newLogo.webp'
 import FormContato from '../objects/FormContato'
+import { useEffect } from 'react'
 
 import { MdEmail } from "react-icons/md"
 import { FaFacebook, FaTwitter, FaInstagram, FaPhoneAlt,FaWhatsapp } from "react-icons/fa"
 
 const Contato = () =>{
+//    
+// 
+// 
+
+// 
+// 
+// 
+
     return(
         <>
             <aside className={`${styles.banner}`} id='contato'>
 
                         <h2 className={`${styles.title}`}>
-                            <span className={`${styles.t_1}`}>AGENDE </span> 
+                            <span className={`${styles.t_1} `}>AGENDE </span> 
                             <br/>
-                            <span className={`${styles.t_2}`}>SUA </span> 
-                            <span className={`${styles.t_3}`}>COLETA</span>
+                            <span className={`${styles.t_2} `}>SUA </span> 
+                            <span className={`${styles.t_3} `}>COLETA</span>
                         </h2>
 
             </aside>

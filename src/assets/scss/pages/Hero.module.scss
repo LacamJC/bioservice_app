@@ -11,7 +11,9 @@
     height: 1200px;
     @media screen and (max-width: 476px)
     {
-        height: 560px;
+        height: max-content;
+        padding-top: 100px;
+        padding-bottom: 150px;
         display: block;
     }
     width: 100%;
@@ -92,7 +94,37 @@
                 letter-spacing: 10px;
             }
 
-            
+            @media screen and (max-width: 1500px)
+            {
+                .t_1{font-size: 11rem;
+                    letter-spacing: 44px;
+                    font-weight: bold;
+                    color: #24A652;
+                }
+                .t_2{    
+                    font-size: 4rem;
+                    font-weight: bold;
+                    line-height: 0;
+                    color: #F2D027;
+                    letter-spacing: 28px;
+                }
+                .t_3{
+                    font-size: 4rem;
+                    font-weight: bold;
+                    line-height: .7;
+                    color: $verde_floresta;
+                    letter-spacing: 10px;
+                }
+                .t_4{   
+                     font-size: 7rem;
+                    font-weight: bold;
+                    line-height: 180px;
+                    color: #24A652;
+                    letter-spacing: 8px;
+                }
+            }
+
+           
 
             &:hover{
                 cursor: default;
@@ -162,16 +194,16 @@
         {
             h1{
             .t_1{
-                font-size: 8.5rem;}
-            .t_2{font-size: 3.3rem;
+                font-size: 6.5rem;}
+            .t_2{font-size: 2.5rem;
                 font-weight: bold;
                 line-height: 0;
                 color: #F2D027;
-                letter-spacing: 19px;
+                letter-spacing: 18px;
                 padding-left: 5px;
             }
             .t_3{
-                font-size: 5rem;
+                font-size: 4rem;
                 font-weight: bold;
                 line-height: 30px;
                 color: #24A652;
@@ -179,11 +211,11 @@
             
             }
             .t_4{
-                font-size: 6.35rem;
+                font-size: 5rem;
                 font-weight: bold;
                 line-height: 122px;
                 color: #24A652;
-                letter-spacing: 3px;
+                letter-spacing: 4px;
             }
             }
             
@@ -238,23 +270,23 @@
         {
             h1{
                 .t_1{
-                    font-size: 4.5rem;
+                    font-size:3.5rem;
                     letter-spacing: 9px;
                 }
                 .t_2{
-                    font-size: 1.9rem;
+                    font-size: 1.4rem;
                     letter-spacing: 3px;
+                
                 }
                 .t_3{
-                    font-size: 2.5rem;
+                    font-size: 2.4rem;
                     letter-spacing: 1px;
                     line-height: 16px;
                 }
                 .t_4{
-                    font-size: 2.8rem;
+                    font-size: 2.2rem;
                     line-height: 50px;
                     letter-spacing: 0.6px;
-            
                 }   
             }
             

@@ -131,9 +131,9 @@
   align-items: center;
   height: 200px;
   padding: 10px 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
 }
-@media screen and (min-width: 922px) {
+@media screen and (min-width: 1040px) {
   .cabecalho .menu_controls, .cabecalho .hidden_navBar {
     display: none;
   }
@@ -190,7 +190,7 @@
     transform: scale(0.8);
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1030px) {
   .cabecalho {
     position: sticky;
     top: 0;
