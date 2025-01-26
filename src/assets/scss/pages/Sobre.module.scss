@@ -111,6 +111,19 @@
             margin: 50px 24px;
         }
     }
+
+    @media screen and (max-width: 390px)
+    {
+        h2{
+            .t_1{
+                font-size: 2.2rem;
+            }
+
+            .t_2{
+                font-size: 2rem;
+            }
+        }
+    }
 }
 
 .empresas_list{

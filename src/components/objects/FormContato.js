@@ -83,7 +83,7 @@ const FormContato = () =>{
                         Para saber se você é uma casa, um pequeno negócio ou um grande estabelecimento, assim podemos entender melhor como ajudar de acordo com as suas necessidades.
                     </p> */}
                     <br/>
-                    <div className="btn-group border-success" role="group" aria-label="Basic radio toggle button group">
+                    <div className="btn-group border-success btn-group-sm" role="group" aria-label="Basic radio toggle button group">
                         <input
                             type="radio"
                             className="btn-check"
@@ -93,6 +93,7 @@ const FormContato = () =>{
                             value="Estabelecimento de Grande Porte (Restaurantes, Feiras, Refeitórios)"
                         />
                         <label className="btn btn-outline-success" htmlFor="btnradio1">Estabelecimento de Grande Porte (Restaurantes, Feiras, Refeitórios)</label>
+                        
                         <input
                             type="radio"
                             className="btn-check"

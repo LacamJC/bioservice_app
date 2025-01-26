@@ -112,7 +112,7 @@
   align-items: center;
   font-size: 1.4rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   border-radius: 5px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5098039216);
   text-decoration: none;
@@ -122,6 +122,11 @@
   background-color: white;
   border: 2px solid #24A652;
   color: #24A652;
+}
+@media screen and (max-width: 390px) {
+  .button {
+    width: 90%;
+  }
 }
 
 * {
@@ -371,6 +376,36 @@
     font-size: 2.2rem;
     line-height: 50px;
     letter-spacing: 0.6px;
+  }
+  .main .control h2 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: start;
+    color: #24A652;
+    font-family: "Roboto", cursive;
+    padding: 5px 15px;
+    text-indent: 1rem;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .main .control h1 .t_1 {
+    font-size: 2.5rem;
+    letter-spacing: 9px;
+  }
+  .main .control h1 .t_2 {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+  }
+  .main .control h1 .t_3 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 16px;
+  }
+  .main .control h1 .t_4 {
+    font-size: 1.2rem;
+    line-height: 50px;
+    letter-spacing: 5.6px;
   }
   .main .control h2 {
     margin-top: 20px;

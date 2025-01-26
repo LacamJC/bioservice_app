@@ -92,12 +92,12 @@ const Servicos = () => {
 
     return(
         <>
-        <div className={`${styles.bg_tuned}`}>
+        <div className={`${styles.bg_tuned}`} id="servicos">
             <h2><span className={`${styles.t_1} ${styles.showTag}`}>NOSSOS</span><br/> <span className={`${styles.t_2} ${styles.showTag}`}>SERVIÇOS</span></h2>
         </div>
-            <article className={`${styles.artigo} ${styles.servicos} container ${styles.showTag}`} id="servicos">
+            <article className={`${styles.artigo} ${styles.servicos} container ${styles.showTag}`} >
                 
-            <h3 className={`${styles.subTitulo} fs-1 text-center`}>Na Bioservice Ambiental, oferecemos soluções completas para o manejo responsável de resíduos, com foco na sustentabilidade e no respeito ao meio ambiente. Conheça os serviços que garantem um futuro mais verde e saudável</h3>
+            <h3 className={`${styles.paragrafo} text-start`}>Na Bioservice Ambiental, oferecemos soluções completas para o manejo responsável de resíduos, com foco na sustentabilidade e no respeito ao meio ambiente. Conheça os serviços que garantem um futuro mais verde e saudável</h3>
 
            
             </article>

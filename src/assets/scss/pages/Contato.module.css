@@ -112,7 +112,7 @@
   align-items: center;
   font-size: 1.4rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   border-radius: 5px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5098039216);
   text-decoration: none;
@@ -122,6 +122,11 @@
   background-color: white;
   border: 2px solid #24A652;
   color: #24A652;
+}
+@media screen and (max-width: 390px) {
+  .button {
+    width: 90%;
+  }
 }
 
 * {
@@ -220,6 +225,20 @@
   }
   .banner .title .t_3 {
     font-size: 2rem;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .banner .title .t_1 {
+    font-size: 2.5rem;
+    letter-spacing: 14px;
+  }
+  .banner .title .t_2 {
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+  }
+  .banner .title .t_3 {
+    font-size: 1.5rem;
     letter-spacing: 10px;
   }
 }
