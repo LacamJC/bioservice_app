@@ -1,0 +1,9 @@
+.carrosel_item {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrosel_item img {
+  height: 100%;
+}/*# sourceMappingURL=Carrosel.module.css.map */

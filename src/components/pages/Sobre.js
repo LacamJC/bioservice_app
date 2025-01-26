@@ -4,11 +4,7 @@ import vetor_certificado from '../../assets/img/vetores/certificado.png'
 import vetor_barril from '../../assets/img/vetores/barril.png'
 
 
-import sabesp_logo from '../../assets/img/empresas/Sabesp-logo-DFEEC1E402-seeklogo.com.png'
-import bombeiro_logo from '../../assets/img/empresas/bombeiro-civil-logo-D0D2D96CC7-seeklogo.com.png'
-import anvisa_logo from '../../assets/img/empresas/ANVISA-logo-BE63621131-seeklogo.com.png'
-import ibama_logo from '../../assets/img/empresas/ibama-logo-F94A8B0C6B-seeklogo.com.png'
-import cetebesp_logo from '../../assets/img/empresas/CETESB-250x300.png'
+import Carrosel from '../objects/Carrosel'
 import iso_logo from '../../assets/img/empresas/iso-14001-logo-E5046E951F-seeklogo.com.png'
 
 const Sobre = () =>{
@@ -142,25 +138,9 @@ const Sobre = () =>{
                     </div>
             
 
-                    <h3 className={`${styles.subTitulo} mx-auto ${styles.showTag}`}>NOSSAS CERTIFICAÇÕES</h3>
-                    <div className={`${styles.empresas_list}`}>
-                        <div className={`${styles.list_item} ${styles.showLeg}`}>
-                            <img src={sabesp_logo} alt="logo da sabesp"/>
-                        </div>
-                        <div className={`${styles.list_item} ${styles.showLeg}`}>
-                            <img src={ibama_logo} alt="logo do ibama"/>
-                        </div>
-                        <div className={`${styles.list_item} ${styles.showLeg}`}>
-                            <img src={cetebesp_logo} alt="logo da cetebesp"/>
-                        </div>
-                        <div className={`${styles.list_item} ${styles.showLeg}`}>
-                            <img src={bombeiro_logo} alt="logo do corpo de bombeiros"/>
-                        </div>
-                        <div className={`${styles.list_item} ${styles.showLeg}`}>
-                            <img src={anvisa_logo} alt="logo da anvisa"/>
-                        </div>
-                    </div>
-                    <p className={`${styles.paragrafo} ${styles.showTag}`}>Este certificado é uma ferramenta essencial para garantir que o seu negócio esteja em conformidade com as normas ambientais, evitando possíveis multas ou penalidades. Ele também reforça o compromisso da sua empresa com a responsabilidade socioambiental, o que é altamente valorizado por clientes, parceiros e órgãos reguladores.</p>
+                    <h3 className={`${styles.subTitulo} mx-auto ${styles.showTag} mb-5`}>NOSSAS CERTIFICAÇÕES</h3>
+                    <Carrosel/>
+                    <p className={`${styles.paragrafo} mt-5 ${styles.showTag}`}>Este certificado é uma ferramenta essencial para garantir que o seu negócio esteja em conformidade com as normas ambientais, evitando possíveis multas ou penalidades. Ele também reforça o compromisso da sua empresa com a responsabilidade socioambiental, o que é altamente valorizado por clientes, parceiros e órgãos reguladores.</p>
             </article>
 
             

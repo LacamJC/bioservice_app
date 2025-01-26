@@ -133,17 +133,28 @@
   padding: 0px;
 }
 
+.carrosel_item {
+  background-color: red;
+  padding: 20px;
+  justify-content: center;
+  width: 100% !important;
+}
+@media screen and (max-width: 500px) {
+  .carrosel_item {
+    width: 425px !important;
+    margin: 0px 0px 0px 0px !important;
+  }
+}
 .card {
-  background-color: rgba(36, 166, 82, 0.337254902);
+  background-color: rgba(36, 166, 82, 0.1921568627);
   width: 400px;
+  border: 2px solid #24A652;
   border-radius: 5px;
   padding-bottom: 15px;
-  margin: 50px;
 }
-@media screen and (max-width: 978px) {
+@media screen and (max-width: 500px) {
   .card {
     width: 100%;
-    margin: 50px 0px;
   }
 }
 .card h3 {
@@ -159,6 +170,8 @@
 }
 .card ul {
   list-style-type: circle;
+  list-style-position: inside;
+  padding: 0px 20px;
 }
 .card ul li {
   font-size: 1rem;

@@ -1,0 +1,24 @@
+
+
+.carrosel_item
+{
+    // background-color: red;
+    height: 150px;  
+    // width: max-content;
+    // width: max-content;
+    // margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // @media screen and (max-width: 567px)
+    // {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     // width: 50px;
+    // }
+
+    img{
+        height: 100%;
+    }
+}
