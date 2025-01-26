@@ -197,6 +197,13 @@
   font-size: 1.7rem;
 }
 @media screen and (max-width: 768px) {
+  .servicos {
+    width: 90% !important;
+  }
+  .servicos .subTitulo {
+    font-size: 2rem !important;
+    text-align: left !important;
+  }
   .servicos .item_titulo {
     width: 100%;
     text-align: left;

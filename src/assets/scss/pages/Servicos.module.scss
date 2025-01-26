@@ -81,6 +81,8 @@
 
 .servicos
 {
+    // background-color: blue;
+    
     .servicos_titulo{
         color: $verde_floresta;
         font-weight: 700;
@@ -91,6 +93,11 @@
 
     @media screen and (max-width: 768px)
     {
+        width: 90% !important;
+        .subTitulo{
+            font-size: 2rem !important;
+            text-align: left !important;
+        }
         .item_titulo
         {
             // color: red;
