@@ -10,6 +10,11 @@ $roboto: "Roboto", cursive;
 $poppins:  "Poppins", cursive;
 
 
+$font_titulo : 3rem;
+$font_subtitulo: 2.5rem;
+$font_texto: 1rem;
+
+
 
 .artigo
 {
@@ -23,7 +28,7 @@ $poppins:  "Poppins", cursive;
 
 .subTitulo
 {
-    font-size: 3.5rem;
+    font-size: $font_subtitulo;
     letter-spacing: 2px;
     font-family: $oswald;
     font-weight: bold;
@@ -53,7 +58,7 @@ $poppins:  "Poppins", cursive;
 .paragrafo
 {
     font-family: $roboto;
-    font-size: 1.2rem;
+    font-size: $font_texto;
     line-height: 1.5rem;
     letter-spacing: 2px;
     text-align: left;

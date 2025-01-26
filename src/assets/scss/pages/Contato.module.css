@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .artigo {
   margin: 0px auto;
@@ -119,83 +120,142 @@
 }
 
 * {
-  padding: 0px;
   margin: 0px;
-  font-size: 100%;
+  padding: 0px;
+  font-family: "Poppins", cursive;
 }
 
-.bg_tuned {
-  min-height: 700px;
-  position: relative;
-  overflow: hidden;
+.content {
+  margin-top: 100px;
+}
+
+.banner {
+  height: -moz-max-content;
+  height: max-content;
+  padding: 100px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
-.bg_tuned h2 {
+.banner::before {
+  content: "";
+  transition: 0.5s ease all;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* Posiciona o pseudo-elemento absolutamente em relação ao elemento pai */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("https://www.agenciapara.com.br/midias/2021/grandes/up_ag_30521_c922a8b5-ff5b-e48f-ba1f-c49ad3ddd59a.jpg");
+  filter: blur(5px) brightness(40%);
+  transform: scale(1.1);
+  /* Cor de fundo semi-transparente (aqui, um preto com 50% de opacidade) */
+  z-index: -1;
+}
+.banner .title {
   color: #24A652;
   font-family: "Oswald", cursive;
   width: -moz-max-content;
   width: max-content;
-  margin: 10px auto;
+  margin: auto;
 }
-.bg_tuned .t_1 {
-  font-size: 12rem;
-  letter-spacing: 37px;
+.banner .title .t_1 {
+  font-size: 17rem;
+  letter-spacing: 11px;
 }
-.bg_tuned .t_2 {
+.banner .title .t_2 {
   font-size: 10rem;
-  letter-spacing: 23px;
+  letter-spacing: 10px;
 }
-@media screen and (max-width: 800px) {
-  .bg_tuned .t_1 {
-    font-size: 7rem;
-    letter-spacing: 37px;
+.banner .title .t_3 {
+  font-size: 11rem;
+  letter-spacing: 10px;
+}
+@media screen and (max-width: 1030px) {
+  .banner .title .t_1 {
+    font-size: 12rem;
+    letter-spacing: 11px;
   }
-  .bg_tuned .t_2 {
-    font-size: 6rem;
-    letter-spacing: 24px;
+  .banner .title .t_2 {
+    font-size: 8rem;
+    letter-spacing: 10px;
+  }
+  .banner .title .t_3 {
+    font-size: 9rem;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 865px) {
+  .banner .title .t_1 {
+    font-size: 8rem;
+    letter-spacing: 14px;
+  }
+  .banner .title .t_2 {
+    font-size: 5rem;
+    letter-spacing: 10px;
+  }
+  .banner .title .t_3 {
+    font-size: 5rem;
+    letter-spacing: 10px;
   }
 }
 @media screen and (max-width: 500px) {
-  .bg_tuned .t_1 {
-    font-size: 6rem;
-    letter-spacing: 3px;
+  .banner .title .t_1 {
+    font-size: 4rem;
+    letter-spacing: 14px;
   }
-  .bg_tuned .t_2 {
+  .banner .title .t_2 {
     font-size: 2rem;
-    letter-spacing: 27px;
+    letter-spacing: 10px;
   }
-}
-.bg_tuned::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  filter: blur(5px) brightness(40%);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 0, 0, 0.404);
-  z-index: -1;
-  transform: scale(1.1);
-  background-image: url(https://oficinabrasil.com.br/uploads/images/pitstop/lwart-coleta.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: center;
+  .banner .title .t_3 {
+    font-size: 2rem;
+    letter-spacing: 10px;
+  }
 }
 
-.servicos .servicos_titulo {
-  color: #24A652;
-  font-weight: 700;
-  font-family: "Oswald", cursive;
-  letter-spacing: 5px;
-  font-size: 1.7rem;
+.contato {
+  width: 80%;
+  margin: auto;
 }
-@media screen and (max-width: 768px) {
-  .servicos .item_titulo {
-    width: 100%;
-    text-align: left;
-  }
-}/*# sourceMappingURL=Servicos.module.css.map */
+.contato .body h2 {
+  color: #24A652;
+  font-family: "Oswald", cursive;
+  font-size: 2.5rem;
+}
+.contato .body p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: black;
+}
+.contato .footer h3 {
+  color: #24A652;
+  font-family: "Oswald", cursive;
+}
+.contato .footer .contato_info h4 {
+  color: #24A652;
+  font-weight: bold;
+  font-family: "Roboto", cursive;
+  letter-spacing: 4px;
+}
+.contato .footer .contato_info .contato_listas {
+  list-style: none;
+}
+.contato .footer .contato_info .contato_listas li {
+  margin: 20px 0px;
+  font-size: 1.2rem;
+}
+.contato .footer .contato_info .contato_listas .icon {
+  color: #24A652;
+  font-size: 3rem;
+}
+.contato .footer .contato_info .contato_listas_rede_social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}/*# sourceMappingURL=Contato.module.css.map */
