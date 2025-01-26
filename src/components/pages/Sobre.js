@@ -129,9 +129,10 @@ const Sobre = () =>{
                         <h3 className={`${styles.subTitulo} ${styles.showTag}`}>CERTIFICADO AMBIENTAL</h3>
                             <p className={`${styles.paragrafo} ${styles.showTag}`}>Oferecemos uma solução completa para empresas e estabelecimentos que buscam estar em conformidade com as <span className={`${styles.bold}`}>legislações ambientais</span> vigentes. Ao trabalhar conosco, sua empresa terá acesso a um <span className={`${styles.bold}`}>Certificado Ambiental</span>, um documento oficial que atesta a destinação correta e ambientalmente responsável dos resíduos, como o <span>óleo de cozinha</span>.</p>
 
-                            <div className={`${styles.button} ${styles.showTag}`}>
-                                Garanta já o seu 
-                            </div>
+                            <a href="#contato" className={`${styles.button} ${styles.showTag}`}>
+                                Garanta o seu 
+                            </a>
+
 
                         </div>
                         <div className={`col col-12 col-md-4 ${styles.showTag}` }>

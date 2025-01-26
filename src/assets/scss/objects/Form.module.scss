@@ -31,20 +31,5 @@ form{
         font-size: 1.2rem;
     }
 
-    button{
-        background-color: white;
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        letter-spacing: 3px;
-        border: 2px solid $verde_floresta;
-        color: $verde_floresta;
-        font-weight: bold;
-        border-radius: 5px;
-        transition: .5s ease all;
-
-        &:hover{
-            background-color: $verde_floresta;
-            color: white;
-        }
-    }
+    
 }

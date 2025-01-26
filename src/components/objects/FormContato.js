@@ -12,6 +12,8 @@ const FormContato = () =>{
         comentario: null,
     })
 
+    const [link, setLink] = useState('')
+
     function setTipo(e){
         const {value, checked} = e.target
 
@@ -64,12 +66,11 @@ const FormContato = () =>{
         const comentario = encodeURIComponent(info.comentario)
         const telefone = encodeURIComponent("551111946289761")
 
-        // Construindo a URL do WhatsApp
-        const whatsappLink = `https://wa.me/${telefone}?text=*Porte*%20:%20${porte}%0A*Nome*%20:%20${nome}%0A*Email*%20:%20${email}%0A*Volume*%20:%20${volume}%0A*Endereço*%20:%20${endereco}%0A*Frequencia*%20:%20${frequencia}%0A*Comentario/Duvida*%20:%20${comentario}`;
+    
+        setLink(`https://wa.me/${telefone}?text=*Porte*%20:%20${porte}%0A*Nome*%20:%20${nome}%0A*Email*%20:%20${email}%0A*Volume*%20:%20${volume}%0A*Endereço*%20:%20${endereco}%0A*Frequencia*%20:%20${frequencia}%0A*Comentario/Duvida*%20:%20${comentario}`)
 
+        window.location.href = link
 
-
-        console.log(whatsappLink)
     }
 
 
@@ -112,6 +113,7 @@ const FormContato = () =>{
                         onChange={handleChange} 
                         id="nome"
                         name="nome"
+                        required
                     />
                 </div>
 
@@ -122,7 +124,7 @@ const FormContato = () =>{
 
                 <div className="mb-3">
                     <label htmlFor="endereco" className="form-label">Endereço</label>
-                    <input type="text" className="form-control" id="endereco" name="endereco" onChange={handleChange}/>
+                    <input type="text" className="form-control" id="endereco" name="endereco" onChange={handleChange} required/>
                 </div>
 
 
@@ -217,7 +219,7 @@ const FormContato = () =>{
 
                 </div>
 
-                <button onClick={handleClick}>Enviar mensagem</button>
+                <button className={`${styles.button}`} onClick={handleClick}>Enviar Mensagem</button>
             </form>      
         </>
     )

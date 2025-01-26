@@ -139,6 +139,7 @@ $font_texto: 1.5rem;
     display: flex;
     color: white;
     justify-content: center;
+    border: 2px solid transparent;
     align-items: center;
     font-size: 1.4rem;
     font-weight: bold;
@@ -146,8 +147,12 @@ $font_texto: 1.5rem;
     // border: 2px solid $verde_floresta;
     border-radius: 5px;
     box-shadow: 2px 2px 3px #00000082;
-
+    text-decoration: none;
     &:hover{
         cursor: pointer;
+
+        background-color: white;
+        border: 2px solid $verde_floresta;
+        color: $verde_floresta;
     }
 }
