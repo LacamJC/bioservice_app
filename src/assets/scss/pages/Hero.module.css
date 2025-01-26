@@ -34,8 +34,8 @@
 
 .paragrafo {
   font-family: "Roboto", cursive;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
   letter-spacing: 2px;
   text-align: left;
   text-indent: 1rem;
@@ -270,7 +270,7 @@
   font-weight: bold;
   letter-spacing: 3px;
   font-family: "Poppins", cursive;
-  width: 45%;
+  width: 100%;
   font-size: 2rem;
 }
 @media screen and (max-width: 768px) {

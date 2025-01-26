@@ -33,8 +33,8 @@
 
 .paragrafo {
   font-family: "Roboto", cursive;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
   letter-spacing: 2px;
   text-align: left;
   text-indent: 1rem;
@@ -180,7 +180,14 @@
   background-color: #24A652;
   color: #FFFCFF;
   border-radius: 5px;
+  border: 2px solid transparent;
   font-family: "Poppins", cursive;
+  transition: 0.5s ease all;
+}
+.cabecalho .cta_coleta:hover {
+  background-color: white;
+  border: 2px solid #24A652;
+  color: #24A652;
 }
 @media screen and (max-width: 1200px) {
   .cabecalho {

@@ -47,7 +47,7 @@ const Header = () =>{
                     </ul>
                 </nav>
 
-                <button className={`${styles.cta_coleta}`}>Solicite sua coleta</button>
+                <a href="#contato"><button className={`${styles.cta_coleta}`}>Solicite sua coleta</button></a>
 
                 {/* HIDDEN MENU (Para telas menores que 920px) */}
                
