@@ -8,15 +8,19 @@ const Contato = () =>{
 
     const contato = {
         telefone : "(11) 98532-2036",
-        telefone2: "+5511985322036",
+        url_telefone: "tel:+5511985322036",
+        
         whatsapp: "(11) 98532-2036",
-        whatsapp2: "5511985322036"
+        url_whatsapp: `https://wa.me/+5511985322036?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es`
+        
 
     }
 
         const email = 'contato@bioservice@gmail.com'
         const assunto = 'Vim pelo site da Bioservice'
         const corpoMensagem = 'Olá ! Gostaria de mais informações'
+
+        const url_email = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpoMensagem)}`
 
         const url_instagram = "https://www.instagram.com/bioservicea/"
         const url_facebook = "https://www.facebook.com/BioserviceA/"
@@ -47,12 +51,12 @@ const Contato = () =>{
                     <h3><FaPhoneAlt/> Telefone</h3>
                     <ul>
                         <li>
-                            <a href={contato.telefone} target='_BLANK'>
+                            <a href={contato.url_telefone} target='_BLANK'>
                                 {contato.telefone} - Telefone
                             </a>
                         </li>
                         <li>
-                            <a href={contato.whatsapp} target='_BLANK'>
+                            <a href={contato.url_whatsapp} target='_BLANK'>
                                {contato.whatsapp} - Whatsapp
                             </a>
                         </li>
@@ -65,6 +69,16 @@ const Contato = () =>{
                         <li>
                             <a href={url_endereco} target='_BLANK'>
                                 {endereco}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div className={`${styles.item}`}>
+                    <h3><MdEmail/>Email</h3>
+                    <ul>
+                        <li>
+                            <a href={url_email} target='_BLANK'>
+                                {email}
                             </a>
                         </li>
                     </ul>
