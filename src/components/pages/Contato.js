@@ -34,7 +34,7 @@ const Contato = () =>{
         <>
 
         <article className={`${styles.contato} row w-100 container mx-auto`} id='contato'>
-        <div className={`col col-md-4 col-12  d-flex justify-content-center align-items-center`}>
+        <div className={`col col-md-4 col-12  d-flex justify-content-center align-items-start`}>
             <img src={logo} alt="Logo da Bioservice Ambiental Carapicuiba" width={"100%"}/>
         </div>
 
@@ -69,6 +69,11 @@ const Contato = () =>{
                         </li>
                     </ul>
                 </div>
+                <ul className={`${styles.redes_sociais}`}>
+                    <li><a href={url_instagram} target='_BLANK'><FaInstagram/></a></li>
+                    <li><a href={url_facebook} target='_BLANK'><FaFacebook/></a></li>
+                    <li><a href={url_linkedin} target='_BLANK'><FaLinkedin/></a></li>
+                </ul>
             </div>
         </div>
         </article>

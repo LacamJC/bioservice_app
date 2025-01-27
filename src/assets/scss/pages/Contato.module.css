@@ -156,4 +156,18 @@
 .contato .contato_info .item ul li a:hover {
   color: blue;
   text-decoration: underline;
+}
+.contato .contato_info .redes_sociais {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.contato .contato_info .redes_sociais li {
+  font-size: 2.5rem;
+}
+.contato .contato_info .redes_sociais li a {
+  color: #24A652;
 }/*# sourceMappingURL=Contato.module.css.map */
