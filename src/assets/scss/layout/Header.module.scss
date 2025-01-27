@@ -22,7 +22,7 @@
     height: 200px;
     position: relative;
     background-color: white;
-    z-index: 800;
+    z-index: 1800;
     padding: 10px 20px;
     
 
@@ -118,7 +118,7 @@
         width: 100%;
         transform: translateY(-5px);
         top: 0;
-        z-index: 1000;
+        z-index: 11000;
         background-color: white;
         .navBar, .cta_coleta{
             display: none;

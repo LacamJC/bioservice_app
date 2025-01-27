@@ -142,7 +142,7 @@
   height: 200px;
   position: relative;
   background-color: white;
-  z-index: 800;
+  z-index: 1800;
   padding: 10px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.24);
 }
@@ -216,7 +216,7 @@
     width: 100%;
     transform: translateY(-5px);
     top: 0;
-    z-index: 1000;
+    z-index: 11000;
     background-color: white;
   }
   .cabecalho .navBar, .cabecalho .cta_coleta {

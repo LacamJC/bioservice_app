@@ -7,6 +7,7 @@
 
 .menu_suspenso{
     display: flex;
+    height: 90px;
     width: 100%;
     // background-color: aqua;
     // background-image: linear-gradient(to bottom, $verde_floresta, transparent);
@@ -16,8 +17,12 @@
     list-style-type: none;
     padding: 25px 0px;
     position: fixed;
-    z-index: 700;
+    z-index: 1700;
     top: 0;
+
+    img{
+        transform: scale(2);
+    }
     
     a{
         text-decoration: none;
@@ -27,9 +32,10 @@
             font-weight: bold;
             font-family: $roboto;
             letter-spacing: 2.5px ;
-            padding: 5px 10px;
+            padding: 5px 20px;
             text-decoration: none;
             border: 2px solid transparent;
+            border-radius: 5px;
     
             transition: .5s ease all;
             &:hover{

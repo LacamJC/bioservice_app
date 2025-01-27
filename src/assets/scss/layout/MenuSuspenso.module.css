@@ -135,6 +135,7 @@
 
 .menu_suspenso {
   display: flex;
+  height: 90px;
   width: 100%;
   background-color: white;
   border-bottom: 2px solid rgba(0, 0, 0, 0.322);
@@ -142,8 +143,11 @@
   list-style-type: none;
   padding: 25px 0px;
   position: fixed;
-  z-index: 700;
+  z-index: 1700;
   top: 0;
+}
+.menu_suspenso img {
+  transform: scale(2);
 }
 .menu_suspenso a {
   text-decoration: none;
@@ -154,9 +158,10 @@
   font-weight: bold;
   font-family: "Roboto", cursive;
   letter-spacing: 2.5px;
-  padding: 5px 10px;
+  padding: 5px 20px;
   text-decoration: none;
   border: 2px solid transparent;
+  border-radius: 5px;
   transition: 0.5s ease all;
 }
 .menu_suspenso a li:hover {
