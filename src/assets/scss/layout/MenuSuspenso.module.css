@@ -32,7 +32,7 @@
 
 .paragrafo {
   font-family: "Roboto", cursive;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 3rem;
   letter-spacing: 2px;
   text-align: left;
@@ -137,7 +137,7 @@
   display: flex;
   height: 90px;
   width: 100%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.726);
   border-bottom: 2px solid rgba(0, 0, 0, 0.322);
   justify-content: space-around;
   list-style-type: none;

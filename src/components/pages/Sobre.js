@@ -3,9 +3,15 @@ import vetor_garrafa from '../../assets/img/vetores/garrafa_oleo.png'
 import vetor_certificado from '../../assets/img/vetores/certificado.png'
 import vetor_barril from '../../assets/img/vetores/barril.png'
 
+import certificado_bioservice from '../../assets/img/selobioservice.jpeg'
+import ReactPlayer from 'react-player'
 
 import Carrosel from '../objects/Carrosel'
 import iso_logo from '../../assets/img/empresas/iso-14001-logo-E5046E951F-seeklogo.com.png'
+
+import confianca from '../../assets/img/pilares/confianca.jpeg'
+import cuidado from '../../assets/img/pilares/cuidado.jpeg'
+import seguranca from '../../assets/img/pilares/seguranca.jpeg'
 
 const Sobre = () =>{
     function isVisible(element) {
@@ -58,6 +64,7 @@ const Sobre = () =>{
                 <p className={`${styles.paragrafo} ${styles.showLeg}`}>
                             Contamos com mais de duas décadas de serviço prestado, ao longo de todo esse tempo já ajudamos a reciclar mais de <span className={`${styles.info}`}>17 Milhões de Litros de Óleo</span>
                 </p>
+               
             </article>
             <article className={`${styles.artigo} container`} id="sobreNos" >
                 <div className="row w-100 m-auto mb-5">
@@ -66,13 +73,64 @@ const Sobre = () =>{
                     SOBRE A BIOSERVICE AMBIENTAL 
                     </h2>
                         <p className={`${styles.paragrafo} ${styles.showLeg} `}>
-                            A <span className={`${styles.bold}`}>Bioservice Ambiental</span> é especializada em <span className={`${styles.italic}`}>reciclagem</span> e coleta de resíduos, com foco na <span className={`${styles.italic}`}>sustentabilidade</span> e na proteção do <span className={`${styles.italic}`}>meio ambeinte</span>
+                            A <span className={`${styles.bold}`}>Bioservice Ambiental</span> é especializada em reciclagem e coleta de resíduos, com foco na sustentabilidade e na proteção do meio ambeinte
+                        </p>
+                        <p className={`${styles.paragrafo} ${styles.showTag}`}>
+                            Nascemos com o intuito de mudar o planeta, cuidar de nossa
+                            atmosfera e agir em prol da sustentabilidade; Buscamos incentivar
+                            a sociedade a realizar o descarte consciente do óleo de fritura,
+                            evitando assim, a poluição em redes pluviais e de esgotos.
                         </p>
 
                     </div>
                     <div className={`col col-12 col-md-6 bg-dandger d-flex justify-content-center align-items-center ${styles.showLeg}`}>
                       
-                         <img src="https://www.biolitoral.com.br/imagens/informacoes/coleta-oleo-cozinha-usado-sp-01.jpg" alt="Trabalhadores da Bioservice fazendo o serviço da coleta de óleo em estabelecimentos" width={'80%'} className="border"/>
+                         {/* <img src="https://www.biolitoral.com.br/imagens/informacoes/coleta-oleo-cozinha-usado-sp-01.jpg" alt="Trabalhadores da Bioservice fazendo o serviço da coleta de óleo em estabelecimentos" width={'80%'} className="border"/> */}
+                        <ReactPlayer
+                            url="https://youtu.be/m4FfO-Wvn7c"    
+                            controls={true}
+                        />
+                    </div>
+                </div>
+            </article>
+
+            <article className={`${styles.artigo} container`}>
+                <h2 className={`${styles.subTitulo}`}>NOSSOS PILARES</h2>
+                <div className={` w-100 mx-auto ${styles.pilares}`}>
+                    <div className={` ${styles.item}`}>
+                        <div className={`${styles.header}`}>
+                            <img src={confianca} width={"100%"} className=""/>
+                        </div>
+                        <div className={`${styles.body}`}>
+                            <p>
+                                Somos experts em coleta de resíduos oleosos no estado de SP, possuímos certificações e disponibilizamos selo de garantia a todos os nossos parceiros.
+                            </p>
+                        </div>
+                    </div>
+                    <div className={` ${styles.item}`}>
+                    <div className={`${styles.header}`}>
+                            <img src={seguranca} width={"100%"} className=""/>
+                        </div>
+                        <div className={`${styles.body}`}>
+                            <p>
+                            Contamos com local de armazenamento próprio,
+ seguindo todos os parâmetros exigidos por lei e emitimos
+ nota fiscal  para estabelecimentos conveniados.
+                            </p>
+                        </div>
+                    </div>
+                    <div className={` ${styles.item}`}>
+                    <div className={`${styles.header}`}>
+                            <img src={cuidado} width={"100%"} className=""/>
+                        </div>
+                        <div className={`${styles.body}`}>
+                            <p>
+                                Coletar, transportar e oferecer destinação
+ final ambientalmente correta a resíduos
+ oleosos, deixando os clientes livres de
+ qualquer tipo de sinistros.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -97,6 +155,7 @@ const Sobre = () =>{
 
                         <div className={`${styles.icon} ${styles.showTag}`}>
                             <img src={vetor_certificado} alt={`<div> Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"> Smashicons </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>`}/>
+
                         </div>
                         <p className={`${styles.paragrafo} ${styles.showTag}`}>
                             De acordo com a legislação ambiental, restaurantes, lanchonetes e outros estabelecimentos precisam garantir que o óleo de cozinha usado seja descartado de forma responsável e obter um Certificado de Destinação Final para comprovar que o material foi corretamente reciclado ou tratado.
@@ -123,7 +182,8 @@ const Sobre = () =>{
                     <div className={`row w-100 mx-auto mb-5`}>
                         <div className={`col col-12 col-md-8 mb-5 `}>
                         <h3 className={`${styles.subTitulo} ${styles.showTag}`}>CERTIFICADO AMBIENTAL</h3>
-                            <p className={`${styles.paragrafo} ${styles.showTag}`}>Oferecemos uma solução completa para empresas e estabelecimentos que buscam estar em conformidade com as <span className={`${styles.bold}`}>legislações ambientais</span> vigentes. Ao trabalhar conosco, sua empresa terá acesso a um <span className={`${styles.bold}`}>Certificado Ambiental</span>, um documento oficial que atesta a destinação correta e ambientalmente responsável dos resíduos, como o <span>óleo de cozinha</span>.</p>
+                            <p className={`${styles.paragrafo} ${styles.showTag}`}>Oferecemos uma solução completa para empresas e estabelecimentos que buscam estar em conformidade com as <span className={`${styles.bold}`}>legislações ambientais</span> vigentes.</p>
+                            <p className={`${styles.paragrafo} ${styles.showTag}`}> Ao trabalhar conosco, sua empresa terá acesso a um <span className={`${styles.bold}`}>Certificado Ambiental</span>, um documento oficial que atesta a destinação correta e ambientalmente responsável dos resíduos, como o <span>óleo de cozinha</span>.</p>
 
                             <a href="#contato" className={`${styles.button} ${styles.showTag}`}>
                                 Garanta o seu 
@@ -131,16 +191,17 @@ const Sobre = () =>{
 
 
                         </div>
-                        <div className={`col col-12 col-md-4 ${styles.showTag}` }>
-                            <img src={iso_logo} alt="imagem da iso 1401 normas ambientais" width="80%"/>
-                           
+                        <div className={`col col-12 col-md-4 d-flex justify-content-center align-items-center ${styles.showTag}` }>
+                            {/* <img src={iso_logo} alt="imagem da iso 1401 normas ambientais" width="80%"/> */}
+                                                       <img src={certificado_bioservice}/>
                         </div>
                     </div>
             
 
                     <h3 className={`${styles.subTitulo} mx-auto ${styles.showTag} mb-5`}>NOSSAS CERTIFICAÇÕES</h3>
                     <Carrosel/>
-                    <p className={`${styles.paragrafo} mt-5 ${styles.showTag}`}>Este certificado é uma ferramenta essencial para garantir que o seu negócio esteja em conformidade com as normas ambientais, evitando possíveis multas ou penalidades. Ele também reforça o compromisso da sua empresa com a responsabilidade socioambiental, o que é altamente valorizado por clientes, parceiros e órgãos reguladores.</p>
+                    <p className={`${styles.paragrafo} mt-5 ${styles.showTag}`}>Este certificado é uma ferramenta essencial para garantir que o seu negócio esteja em conformidade com as normas ambientais, evitando possíveis multas ou penalidades.</p>
+                    <p className={`${styles.paragrafo} ${styles.showTag}`}> Ele também reforça o compromisso da sua empresa com a responsabilidade socioambiental, o que é altamente valorizado por clientes, parceiros e órgãos reguladores.</p>
             </article>
 
             

@@ -32,7 +32,7 @@
 
 .paragrafo {
   font-family: "Roboto", cursive;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 3rem;
   letter-spacing: 2px;
   text-align: left;
@@ -284,6 +284,11 @@
 .voceSabia .dykLista .dykItem img {
   width: 55%;
 }
+@media screen and (max-width: 600px) {
+  .voceSabia .dykLista .dykItem img {
+    width: 130px;
+  }
+}
 .voceSabia .dykLista .dykItem .icon {
   width: 250px;
   height: 150px;
@@ -305,4 +310,50 @@
   text-indent: 1rem;
   margin-left: 0px;
   font-weight: 400;
+  padding: 0px 20px;
+}
+
+.pilares {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.pilares .item {
+  flex: 1 1 300px;
+  padding: 10px;
+  height: 200px;
+  display: flex;
+  width: 440px;
+}
+.pilares .item .header {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 10px;
+}
+.pilares .item .body {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pilares .item .body p {
+  font-family: "Roboto", cursive;
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  .pilares .item {
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .pilares .item .header {
+    margin-bottom: 20px;
+  }
+  .pilares .item .header img {
+    width: 130px;
+  }
 }/*# sourceMappingURL=Sobre.module.css.map */
