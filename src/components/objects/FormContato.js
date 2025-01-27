@@ -1,18 +1,19 @@
 import { useState } from "react"
+import { useNavigate } from "react-router"
 import styles from '../../assets/scss/objects/Form.module.css'
 const FormContato = () =>{
 
     const [info, setInfo] = useState({
-        porte : null,
-        nome : null,
-        email : null,
-        volume : null,
-        endereco: null,
-        frequencia: null,
-        comentario: null,
+        porte : "Não informado",
+        nome : "Não informado",
+        email : "Não informado",
+        volume : "Não informado",
+        endereco: "Não informado",
+        frequencia: "Não informado",
+        comentario: "Não informado",
     })
 
-    const [link, setLink] = useState('')
+    // const [link, setLink] = useState('')
 
     function setTipo(e){
         const {value, checked} = e.target
@@ -53,30 +54,34 @@ const FormContato = () =>{
     }
 
 
-    const handleClick = (e) =>{
+    function handleSubmit(e){
         e.preventDefault()
         console.log(info)
-
-        const porte = encodeURIComponent(info.porte);
-        const nome = encodeURIComponent(info.nome);
-        const email = encodeURIComponent(info.email);
-        const volume = encodeURIComponent(info.volume)
-        const endereco = encodeURIComponent(info.endereco)
-        const frequencia = encodeURIComponent(info.frequencia)
-        const comentario = encodeURIComponent(info.comentario)
+        // const porte = encodeURIComponent(info.porte);
+        const porte = info.porte !== null ? encodeURIComponent(info.porte) : "Não informado"
+        const nome = info.nome !== null ? encodeURIComponent(info.nome) : "Não informado"
+        const email = info.email !== null ? encodeURIComponent(info.email) : "Não informado"
+        const volume = info.volume !== null ? encodeURIComponent(info.volume) : "Não informado"
+        const endereco = info.endereco !== null ? encodeURIComponent(info.endereco) : "Não informado"
+        const frequencia = info.frequencia !== null ? encodeURIComponent(info.frequencia) : "Não informado"
+        const comentario = info.comentario !== null ? encodeURIComponent(info.comentario) : "Não informado"
         const telefone = encodeURIComponent("551111946289761")
 
+        
+      
+  
+     
     
-        setLink(`https://wa.me/${telefone}?text=*Porte*%20:%20${porte}%0A*Nome*%20:%20${nome}%0A*Email*%20:%20${email}%0A*Volume*%20:%20${volume}%0A*Endereço*%20:%20${endereco}%0A*Frequencia*%20:%20${frequencia}%0A*Comentario/Duvida*%20:%20${comentario}`)
+        window.location.href = (`https://wa.me/${telefone}?text=*Porte*%20:%20${porte}%0A*Nome*%20:%20${nome}%0A*Email*%20:%20${email}%0A*Volume*%20:%20${volume}%0A*Endereço*%20:%20${endereco}%0A*Frequencia*%20:%20${frequencia}%0A*Comentario/Duvida*%20:%20${comentario}`)
 
-        window.location.href = link
 
     }
 
 
+
     return(
         <>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="btnradio" className={`${styles.label}`}>Porte</label>
                     {/* <p className="fs-4">
@@ -220,7 +225,9 @@ const FormContato = () =>{
 
                 </div>
 
-                <button className={`${styles.button}`} onClick={handleClick}>Enviar Mensagem</button>
+                <input type="submit" className={`${styles.button}`} value="Enviar Mensagem"/>
+
+            
             </form>      
         </>
     )

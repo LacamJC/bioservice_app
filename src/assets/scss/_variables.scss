@@ -148,6 +148,8 @@ $font_texto: 1.5rem;
     border-radius: 5px;
     box-shadow: 2px 2px 3px #00000082;
     text-decoration: none;
+
+    transition: .5s ease all;
     &:hover{
         cursor: pointer;
 
