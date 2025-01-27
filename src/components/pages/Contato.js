@@ -20,7 +20,7 @@ const Contato = () =>{
         const assunto = 'Vim pelo site da Bioservice'
         const corpoMensagem = 'Olá ! Gostaria de mais informações'
 
-        const url_email = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpoMensagem)}`
+        const url_email = `mailto:${(email)}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpoMensagem)}`
 
         const url_instagram = "https://www.instagram.com/bioservicea/"
         const url_facebook = "https://www.facebook.com/BioserviceA/"

@@ -50,8 +50,8 @@ const Servicos = () => {
         </div>
             <article className={`${styles.artigo} ${styles.servicos} container ${styles.showTag}`} >
                 
-            <p className={`${styles.paragrafo} ${styles.showTag} text-start`}>Na Bioservice Ambiental, oferecemos soluções completas para o manejo responsável de resíduos, com foco na sustentabilidade e no respeito ao meio ambiente.</p>
-            <p className={`${styles.paragrafo} ${styles.showTag}`}> Conheça os serviços que garantem um futuro mais verde e saudável</p>
+            <p className={`${styles.paragrafo}  text-start`}>Na Bioservice Ambiental, oferecemos soluções completas para o manejo responsável de resíduos, com foco na sustentabilidade e no respeito ao meio ambiente.</p>
+            <p className={`${styles.paragrafo} `}> Conheça os serviços que garantem um futuro mais verde e saudável</p>
             </article>
             <CarroselServicos/>
         </>
