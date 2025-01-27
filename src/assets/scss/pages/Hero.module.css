@@ -289,6 +289,11 @@
   font-family: "Poppins", cursive;
   width: 100%;
   font-size: 2rem;
+  transition: 0.5s ease all;
+}
+.main .control .ctas button:hover {
+  background-color: #24A652;
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .main .control .ctas button {
