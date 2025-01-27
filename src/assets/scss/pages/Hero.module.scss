@@ -163,6 +163,14 @@
             flex-wrap: wrap;
             gap: 50px;
 
+            @media screen and (max-width: 900px)
+            {
+                a{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
             button{
                 background-color: transparent;
                 border: 2px $verde_floresta solid ;
