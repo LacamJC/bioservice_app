@@ -10,7 +10,7 @@ const Formulario = () =>{
         <>
         <aside className={`${styles.banner}`} >
 
-<h2 className={`${styles.title}`}>
+<h2 className={`${styles.title}`} id='formulario'>
     <span className={`${styles.t_1} `}>AGENDE </span> 
     <br/>
     <span className={`${styles.t_2} `}>SUA </span> 
@@ -20,7 +20,7 @@ const Formulario = () =>{
 </aside>
 <div className={`${styles.artigo}`}>
 <div className={`${styles.contato}`}>
-    <div className={`${styles.header}`}>
+    <div className={`${styles.header}`} >
     
     </div>
     <div className={`${styles.body}`}>

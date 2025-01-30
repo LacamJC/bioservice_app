@@ -34,7 +34,7 @@
   font-family: "Roboto", cursive;
   font-size: 1.1rem;
   line-height: 3rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: left;
   text-indent: 1rem;
   margin-left: 15px;
@@ -150,7 +150,7 @@
   border: 2px solid #24A652;
   border-radius: 5px;
   padding-bottom: 15px;
-  transform: scale(0.9);
+  transform: scale(0.95);
   transition: 0.5s ease all;
 }
 @media screen and (max-width: 800px) {

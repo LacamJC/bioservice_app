@@ -11,6 +11,8 @@ const Card = ({titulo, texto, items}) =>{
             <ul>
                 {items.map(item=>(<li>{item}</li>))}
             </ul>
+
+            <a href="#contato" className={`${styles.button} mx-auto`}>Entre em contato</a>
         </div>
     </>)
 }

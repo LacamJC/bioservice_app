@@ -51,7 +51,7 @@ const Header = () =>{
                     </ul>
                 </nav>
 
-                <a href="#contato"><button className={`${styles.cta_coleta}`}>Solicite sua coleta</button></a>
+                <a href="#formulario"><button className={`${styles.cta_coleta}`}>Solicite sua coleta</button></a>
 
                 {/* HIDDEN MENU (Para telas menores que 920px) */}
                

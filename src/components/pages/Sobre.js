@@ -95,9 +95,9 @@ const Sobre = () =>{
             </article>
 
             <article className={`${styles.artigo} container`}>
-                <h2 className={`${styles.subTitulo}`}>NOSSOS PILARES</h2>
+                <h2 className={`${styles.subTitulo} ${styles.showTag}`}>NOSSOS PILARES</h2>
                 <div className={` w-100 mx-auto ${styles.pilares}`}>
-                    <div className={` ${styles.item}`}>
+                    <div className={` ${styles.item} ${styles.showTag}`}>
                         <div className={`${styles.header}`}>
                             <img src={confianca} width={"100%"} className=""/>
                         </div>
@@ -107,7 +107,7 @@ const Sobre = () =>{
                             </p>
                         </div>
                     </div>
-                    <div className={` ${styles.item}`}>
+                    <div className={` ${styles.item} ${styles.showTag}` }>
                     <div className={`${styles.header}`}>
                             <img src={seguranca} width={"100%"} className=""/>
                         </div>
@@ -119,7 +119,7 @@ const Sobre = () =>{
                             </p>
                         </div>
                     </div>
-                    <div className={` ${styles.item}`}>
+                    <div className={` ${styles.item} ${styles.showTag}`}>
                     <div className={`${styles.header}`}>
                             <img src={cuidado} width={"100%"} className=""/>
                         </div>
