@@ -198,6 +198,11 @@
 }
 @media screen and (max-width: 400px) {
   .teste {
+    width: 375px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .teste {
     width: 320px !important;
   }
 }/*# sourceMappingURL=Card.module.css.map */
