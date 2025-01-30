@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer'
 import MenuSuspenso from './components/layout/MenuSuspenso'
 import Formulario from './components/pages/Formulario'
 import Contato from './components/pages/Contato'
+import Whatsapp from './components/objects/Whatsapp'
 import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   
@@ -18,7 +19,10 @@ function App() {
               <Servicos/>
                 <Formulario/>
                   <Contato/>
+                  
       <Footer/>
+
+      <Whatsapp/>
     </>
   )
 }

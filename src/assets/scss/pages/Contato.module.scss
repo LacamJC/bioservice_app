@@ -67,3 +67,17 @@
 
         
 }
+
+.icon{
+    background-color: transparent;
+    color: $verde_floresta;
+    padding: 5px;
+    border-radius: 5px;
+
+    transition: .5s ease all;
+    &:hover{
+        background-color: $verde_floresta;
+        color: white;
+
+    }
+}

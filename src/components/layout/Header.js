@@ -33,15 +33,19 @@ const Header = () =>{
                     <ul className={`${styles.navBar_list}`} >
                         <li className={`${styles.list_item}`} >
                             <a href="#home"  className={`${styles.list_link}`}>Home</a>
+                            <span className={`${styles.line}`}></span>
                         </li>
                         <li className={`${styles.list_item}`} id="teste">
                             <a href="#servicos"className={`${styles.list_link}`}>Serviços</a>
+                            <span className={`${styles.line}`}></span>
                         </li>
                         <li className={`${styles.list_item}`} >
                             <a href="#sobreNos"  className={`${styles.list_link}`}>Sobre Nós</a>
+                            <span className={`${styles.line}`}></span>
                         </li>
                         <li className={`${styles.list_item}`} >
                             <a href="#contato"  className={`${styles.list_link}`}>Contato</a>
+                            <span className={`${styles.line}`}></span>
                         </li>
 {/* Instagram (Ícone/link para o Instagram) */}
                     </ul>

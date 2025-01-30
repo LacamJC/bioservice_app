@@ -84,9 +84,9 @@ const Contato = () =>{
                     </ul>
                 </div>
                 <ul className={`${styles.redes_sociais}`}>
-                    <li><a href={url_instagram} target='_BLANK'><FaInstagram/></a></li>
-                    <li><a href={url_facebook} target='_BLANK'><FaFacebook/></a></li>
-                    <li><a href={url_linkedin} target='_BLANK'><FaLinkedin/></a></li>
+                    <li><a href={url_instagram} target='_BLANK'><FaInstagram className={`${styles.icon}`} alt="Icone do instagram"/></a></li>
+                    <li><a href={url_facebook} target='_BLANK'><FaFacebook className={`${styles.icon}`}/></a></li>
+                    <li><a href={url_linkedin} target='_BLANK'><FaLinkedin className={`${styles.icon}`}/></a></li>
                 </ul>
             </div>
         </div>

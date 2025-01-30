@@ -133,38 +133,34 @@
   padding: 0px;
 }
 
-.menu_suspenso {
-  display: flex;
-  height: 90px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.829);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.116);
-  justify-content: space-around;
-  list-style-type: none;
-  padding: 25px 0px;
+.icone {
   position: fixed;
-  z-index: 1700;
-  top: 0;
-}
-.menu_suspenso img {
-  transform: scale(2);
-}
-.menu_suspenso a {
-  text-decoration: none;
-}
-.menu_suspenso a li {
-  color: #24a652;
-  font-weight: 400;
-  font-family: "Roboto", cursive;
-  letter-spacing: 2.5px;
-  padding: 5px 20px;
-  text-decoration: none;
-  border: 2px solid transparent;
-  border-radius: 5px;
+  right: 3rem;
+  /* bottom: 0rem; */
+  /* top: 10rem; */
+  z-index: 5000;
+  color: black;
+  /* bottom: 0px; */
+  bottom: 3rem;
+  opacity: 0.5;
   transition: 0.5s ease all;
-  font-size: 1.4rem;
 }
-.menu_suspenso a li:hover {
-  text-decoration: underline;
-  text-decoration-color: #24A652;
-}/*# sourceMappingURL=MenuSuspenso.module.css.map */
+@media screen and (min-width: 976px) {
+  .icone {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 966px) {
+  .icone {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .icone {
+    font-size: 3rem;
+  }
+}
+.icone:hover {
+  color: #24A652;
+  opacity: 1;
+}/*# sourceMappingURL=Whatsapp.module.css.map */

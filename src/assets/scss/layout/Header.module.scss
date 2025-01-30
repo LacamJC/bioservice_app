@@ -63,8 +63,26 @@
                 font-family: $roboto;
 
                 color: $verde_floresta;
-                font-weight: bold;
+                font-weight: 400;
                 letter-spacing: 4px;
+                display: flex;
+                flex-direction: column;
+                .line{
+                    width: 1%;
+                    border: 1px solid transparent;
+                    height: 1px;
+
+                    transition: .5s ease all;
+
+                    
+                }
+
+                &:hover{
+                    .line{
+                        width: 100%;
+                        border-color: $verde_floresta;
+                    }
+                }
             }
 
             .list_link
@@ -89,7 +107,7 @@
         border: 2px solid transparent;
 
         font-family: $poppins;
-
+        transform: translateY(-10px);
         transition: .5s ease all;
         &:hover{
             background-color: white;
