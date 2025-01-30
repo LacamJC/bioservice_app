@@ -150,6 +150,8 @@
   border: 2px solid #24A652;
   border-radius: 5px;
   padding-bottom: 15px;
+  transform: scale(0.9);
+  transition: 0.5s ease all;
 }
 @media screen and (max-width: 800px) {
   .card {
@@ -178,6 +180,9 @@
   color: #24A652;
   font-weight: bold;
   margin: 30px 0px;
+}
+.card:hover {
+  transform: scale(1);
 }
 
 .teste {
