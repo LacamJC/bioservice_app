@@ -52,53 +52,88 @@ const CarroselServicos = () =>{
     ]
 
 
-    const responsive = {
+        const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 1
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 1
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 1
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
+            breakpoint: { max: 464, min: 0 },
+            items: 1
         }
-    }
+        };
 
 
     return(
         <>
-           <Carousel 
-                swipeable={false}
-                draggable={false}
-                showDots={true}
-                responsive={responsive}
-                ssr={true} // means to render carousel on server-side.
-                infinite={true}
-                autoPlaySpeed={1000}
-                keyBoardControl={true}
-                // customTransition="all .5"
-                // transitionDuration={500}
-                // containerClass="carousel-container"
-                // removeArrowOnDeviceType={["tablet", "mobile"]}
-                // dotListClass="custom-d   ot-list-style"
-                // itemClass={`${styles.teste} carousel-item-padding-40-px`}
-                itemClass={`${styles.teste} carousel-item-padding-40-px`}
-                // centerMode={true}
+            <Carousel 
+               additionalTransfrom={0}
+               arrows
+               autoPlaySpeed={3000}
+               centerMode={false}
+               className=""
+               containerClass="container-with-dots"
+               dotListClass=""
+               draggable
+               focusOnSelect={false}
+               infinite
+               itemClass=""
+               keyBoardControl
+               minimumTouchDrag={80}
+               pauseOnHover
+               renderArrowsWhenDisabled={false}
+               renderButtonGroupOutside={false}
+               renderDotsOutside={false}
+               responsive={{
+                 desktop: {
+                   breakpoint: {
+                     max: 3000,
+                     min: 1024
+                   },
+                   items: 3,
+                   partialVisibilityGutter: 40
+                 },
+                 mobile: {
+                   breakpoint: {
+                     max: 464,
+                     min: 0
+                   },
+                   items: 1,
+                   partialVisibilityGutter: 30
+                 },
+                 tablet: {
+                   breakpoint: {
+                     max: 1024,
+                     min: 464
+                   },
+                   items: 2,
+                   partialVisibilityGutter: 30
+                 }
+               }}
+               rewind={false}
+               rewindWithAnimation={false}
+               rtl={false}
+               shouldResetAutoplay
+               showDots={false}
+               sliderClass=""
+               slidesToSlide={1}
+               swipeable
             >
                 {servicos.map(servico=>(
                     <Card
                     titulo={servico.titulo}
                     texto={servico.texto}
                     items={servico.itens}
-                    itemClass={`${styles.teste}`}
+                 
                 />
                 ))}
             </Carousel>;

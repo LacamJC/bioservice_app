@@ -30,12 +30,15 @@
 .card{
     background-color: white;
     // width: max-content;
-    width: 500px;
+    width: 600px;
+    // margin: 0px 150px;
+    // max-width: 600px;
+    // width: max-content;
     // height: max-content;
 
     @media screen and (max-width: 800px)
     {
-        width: 80%;
+        width: 100%;
         // margin: 20px;
     }
    
@@ -75,4 +78,30 @@
 }
 
 
+.teste{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    // width: 100%;
+    // padding: 0px 20px !important;
+// 
+    @media screen and (max-width: 1280px)
+    {
+        padding: 0px 20px !important;
+    }
 
+    @media screen and (max-width: 500px)
+    {
+        width: 425px !important;
+        padding: 0px !important;
+        // margin: auto !important;
+    }
+
+    @media screen and (max-width: 400px)
+    {
+        // width: 100% !important;
+        // margin: ;
+        width: 320px !important;
+        // padding: 0px 20px !important;
+    }
+}
