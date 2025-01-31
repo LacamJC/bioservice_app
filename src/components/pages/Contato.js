@@ -1,8 +1,8 @@
 import styles from '../../assets/scss/pages/Contato.module.css'
 import { MdEmail } from "react-icons/md"
-import { FaFacebook, FaTwitter, FaInstagram, FaPhoneAlt,FaWhatsapp, FaLinkedin, FaMapMarkerAlt  } from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaPhoneAlt, FaLinkedin, FaMapMarkerAlt  } from "react-icons/fa"
 import logo from '../../assets/img/logo_completa.webp'
-import { useState } from 'react'
+
 
 const Contato = () =>{
 
@@ -24,7 +24,6 @@ const Contato = () =>{
 
         const url_instagram = "https://www.instagram.com/bioservicea/"
         const url_facebook = "https://www.facebook.com/BioserviceA/"
-        const url_twitter = ""
         const url_linkedin = "https://www.linkedin.com/company/bioservicea"
 
         const endereco = "Av. Maria Benedita Melo Lincoln, 220 - Parque Jandaia, Carapicuíba - SP, 06333-060"
@@ -39,7 +38,7 @@ const Contato = () =>{
 
         <article className={`${styles.contato} row w-100 container mx-auto`} id='contato'>
         <div className={`col col-md-4 col-12  d-flex justify-content-center align-items-start`}>
-            <img src={logo} alt="Logo da Bioservice Ambiental Carapicuiba" width={"100%"}/>
+            <img src={logo} alt="Logo da Bioservice Ambiental Carapicuiba" width={"100%"} loading="lazy"/>
         </div>
 
         <div className={`col col-md-8 col-12`}>
@@ -51,12 +50,12 @@ const Contato = () =>{
                     <h3><FaPhoneAlt/> Telefone</h3>
                     <ul>
                         <li>
-                            <a href={contato.url_telefone} target='_BLANK'>
+                            <a href={contato.url_telefone} target='_BLANK' rel="noopener noreferrer">
                                 {contato.telefone} - Telefone
                             </a>
                         </li>
                         <li>
-                            <a href={contato.url_whatsapp} target='_BLANK'>
+                            <a href={contato.url_whatsapp} target='_BLANK' rel="noopener noreferrer">
                                {contato.whatsapp} - Whatsapp
                             </a>
                         </li>
@@ -67,7 +66,7 @@ const Contato = () =>{
                     <h3><FaMapMarkerAlt /> Endereço</h3>
                     <ul>
                         <li>
-                            <a href={url_endereco} target='_BLANK'>
+                            <a href={url_endereco} target='_BLANK' rel="noopener noreferrer">
                                 {endereco}
                             </a>
                         </li>
@@ -77,16 +76,16 @@ const Contato = () =>{
                     <h3><MdEmail/>Email</h3>
                     <ul>
                         <li>
-                            <a href={url_email} target='_BLANK'>
+                            <a href={url_email} target='_BLANK' rel="noopener noreferrer">
                                 {email}
                             </a>
                         </li>
                     </ul>
                 </div>
                 <ul className={`${styles.redes_sociais}`}>
-                    <li><a href={url_instagram} target='_BLANK'><FaInstagram className={`${styles.icon}`} alt="Icone do instagram"/></a></li>
-                    <li><a href={url_facebook} target='_BLANK'><FaFacebook className={`${styles.icon}`}/></a></li>
-                    <li><a href={url_linkedin} target='_BLANK'><FaLinkedin className={`${styles.icon}`}/></a></li>
+                    <li><a href={url_instagram} target='_BLANK' rel="noopener noreferrer"><FaInstagram className={`${styles.icon}`} alt="Icone do instagram"/></a></li>
+                    <li><a href={url_facebook} target='_BLANK' rel="noopener noreferrer"><FaFacebook className={`${styles.icon}`}/></a></li>
+                    <li><a href={url_linkedin} target='_BLANK' rel="noopener noreferrer"><FaLinkedin className={`${styles.icon}`}/></a></li>
                 </ul>
             </div>
         </div>

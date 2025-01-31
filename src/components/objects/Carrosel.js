@@ -1,10 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import sabesp_logo from '../../assets/img/empresas/Sabesp-logo-DFEEC1E402-seeklogo.com.png'
+import sabesp_logo from '../../assets/img/empresas/Sabesp-logo-DFEEC1E402-seeklogo.com.webp'
 import bombeiro_logo from '../../assets/img/empresas/bombeiro-civil-logo-D0D2D96CC7-seeklogo.com.png'
-import anvisa_logo from '../../assets/img/empresas/ANVISA-logo-BE63621131-seeklogo.com.png'
-import ibama_logo from '../../assets/img/empresas/ibama-logo-F94A8B0C6B-seeklogo.com.png'
-import cetebesp_logo from '../../assets/img/empresas/CETESB-250x300.png'
+import anvisa_logo from '../../assets/img/empresas/ANVISA-logo-BE63621131-seeklogo.com.webp'
+import ibama_logo from '../../assets/img/empresas/ibama-logo-F94A8B0C6B-seeklogo.com.webp'
+import cetebesp_logo from '../../assets/img/empresas/CETESB-250x300.webp'
 import styles from '../../assets/scss/objects/Carrosel.module.css'
 const Carrosel = () =>{
     const responsive = {
@@ -54,11 +54,11 @@ const Carrosel = () =>{
         >
         {logos.map(item=>(
             <div className={`${styles.carrosel_item}`}>
-                <img src={item} alt="Imagem de uma corporação certificada"/>
+                <img src={item} alt="Imagem de uma corporação certificada" loading="lazy"/>
             </div>
         ))}
         {/* <div><img src={bombeiro_logo}/></div> */}
-      </Carousel>;
+      </Carousel>
       </>)
 }
 

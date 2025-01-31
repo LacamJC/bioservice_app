@@ -1,17 +1,16 @@
 import styles from '../../assets/scss/pages/Sobre.module.css'
-import vetor_garrafa from '../../assets/img/vetores/garrafa_oleo.png'
-import vetor_certificado from '../../assets/img/vetores/certificado.png'
-import vetor_barril from '../../assets/img/vetores/barril.png'
+import vetor_garrafa from '../../assets/img/vetores/garrafa_oleo.webp'
+import vetor_certificado from '../../assets/img/vetores/certificado.webp'
+import vetor_barril from '../../assets/img/vetores/barril.webp'
 
-import certificado_bioservice from '../../assets/img/selobioservice.jpeg'
+import certificado_bioservice from '../../assets/img/selobioservice.webp'
 import ReactPlayer from 'react-player'
 
 import Carrosel from '../objects/Carrosel'
-import iso_logo from '../../assets/img/empresas/iso-14001-logo-E5046E951F-seeklogo.com.png'
 
-import confianca from '../../assets/img/pilares/confianca.jpeg'
-import cuidado from '../../assets/img/pilares/cuidado.jpeg'
-import seguranca from '../../assets/img/pilares/seguranca.jpeg'
+import confianca from '../../assets/img/pilares/confianca.webp'
+import cuidado from '../../assets/img/pilares/cuidado.webp'
+import seguranca from '../../assets/img/pilares/seguranca.webp'
 
 const Sobre = () =>{
     function isVisible(element) {
@@ -85,7 +84,7 @@ const Sobre = () =>{
                     </div>
                     <div className={`col col-12 col-md-6 bg-dandger d-flex justify-content-center align-items-center ${styles.showLeg}`}>
                       
-                         {/* <img src="https://www.biolitoral.com.br/imagens/informacoes/coleta-oleo-cozinha-usado-sp-01.jpg" alt="Trabalhadores da Bioservice fazendo o serviço da coleta de óleo em estabelecimentos" width={'80%'} className="border"/> */}
+                        
                         <ReactPlayer
                             url="https://youtu.be/m4FfO-Wvn7c"    
                             controls={true}
@@ -99,7 +98,7 @@ const Sobre = () =>{
                 <div className={` w-100 mx-auto ${styles.pilares}`}>
                     <div className={` ${styles.item} ${styles.showTag}`}>
                         <div className={`${styles.header}`}>
-                            <img src={confianca} width={"100%"} className=""/>
+                            <img src={confianca} width={"100%"} loading="lazy" alt="Trabalhamos com a confiança em nosso serviço"/>
                         </div>
                         <div className={`${styles.body}`}>
                             <p>
@@ -109,7 +108,7 @@ const Sobre = () =>{
                     </div>
                     <div className={` ${styles.item} ${styles.showTag}` }>
                     <div className={`${styles.header}`}>
-                            <img src={seguranca} width={"100%"} className=""/>
+                            <img src={seguranca} width={"100%"} loading="lazy" alt="Icone de confianca"/>
                         </div>
                         <div className={`${styles.body}`}>
                             <p>
@@ -121,7 +120,7 @@ const Sobre = () =>{
                     </div>
                     <div className={` ${styles.item} ${styles.showTag}`}>
                     <div className={`${styles.header}`}>
-                            <img src={cuidado} width={"100%"} className=""/>
+                            <img src={cuidado} width={"100%"} loading="lazy" alt="Icone de cuidado"/>
                         </div>
                         <div className={`${styles.body}`}>
                             <p>
@@ -142,7 +141,7 @@ const Sobre = () =>{
                         
                         
                         <div className={`${styles.icon} ${styles.showTag}`}>
-                        <img src={vetor_garrafa} alt={`<div> Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang"> surang </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>`}/>
+                        <img src={vetor_garrafa} alt={`<div> Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang"> surang </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>`} loading="lazy" />
                         </div>
                         <p className={`${styles.paragrafo} ${styles.showTag}`}>
                             Quando o óleo é reutilizado muitas vezes, suas moléculas se quebram, criando substâncias tóxicas que aumentam os riscos de doenças como câncer, além de sobrecarregar o sistema cardiovascular e prejudicar a saúde em geral.
@@ -154,7 +153,7 @@ const Sobre = () =>{
                         
 
                         <div className={`${styles.icon} ${styles.showTag}`}>
-                            <img src={vetor_certificado} alt={`<div> Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"> Smashicons </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>`}/>
+                            <img src={vetor_certificado} alt={`<div> Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"> Smashicons </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>`} loading="lazy"/>
 
                         </div>
                         <p className={`${styles.paragrafo} ${styles.showTag}`}>
@@ -164,7 +163,7 @@ const Sobre = () =>{
                     <div className={`${styles.dykItem} `}>
                         
                         <div className={`${styles.icon} ${styles.showTag}`}>
-                            <img src={vetor_barril} alt={`<div> Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26"> Icongeek26 </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>`}/>
+                            <img src={vetor_barril} alt={`<div> Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26"> Icongeek26 </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>`} loading="lazy"/>
                         </div>
                         <p className={`${styles.paragrafo} ${styles.showTag}`}>
                             Apenas 1 litro de óleo de cozinha jogado de forma inadequada pode poluir uma quantidade de água suficiente para abastecer 30 famílias durante um mês. O óleo forma uma camada na superfície da água que impede a troca de gases essenciais, prejudicando a vida aquática.
@@ -192,8 +191,7 @@ const Sobre = () =>{
 
                         </div>
                         <div className={`col col-12 col-md-4 d-flex justify-content-center align-items-center ${styles.showTag}` }>
-                            {/* <img src={iso_logo} alt="imagem da iso 1401 normas ambientais" width="80%"/> */}
-                                                       <img src={certificado_bioservice}/>
+                                                       <img src={certificado_bioservice} loading="lazy" alt="Certificado da bioservice"/>
                         </div>
                     </div>
             

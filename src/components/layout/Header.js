@@ -27,7 +27,7 @@ const Header = () =>{
             <header className={`${styles.cabecalho}`}>
             
                 
-                <img className={`${styles.logo}`} src={logo} width={'80%'}/>
+                <img className={`${styles.logo}`} src={logo} width={'80%'} loading="lazy" alt="Icone da biosevice ambiental coletora de oleo"/>
 
                 <nav className={`${styles.navBar}`}>
                     <ul className={`${styles.navBar_list}`} >

@@ -1,7 +1,6 @@
 import { useState } from "react"
 import axios from 'axios'
 import {useMask} from '@react-input/mask'
-import { useNavigate } from "react-router"
 import styles from '../../assets/scss/objects/Form.module.css'
 const FormContato = () =>{
 
@@ -29,7 +28,7 @@ const FormContato = () =>{
 
     async function handleBlur(cep)
     {
-        var cep = cep.replace('-','')
+        var _cep = cep.replace('-','')
         const inputs = [
                 document.getElementById('rua'),
                 document.getElementById('bairro'),
@@ -38,7 +37,7 @@ const FormContato = () =>{
                 document.getElementById('regiao')
             ]
         try{
-            await axios.get(`https://viacep.com.br/ws/${cep}/json/`)
+            await axios.get(`https://viacep.com.br/ws/${_cep}/json/`)
             .then(response=>{
                 const data = response.data
                 console.log(data)
@@ -99,7 +98,7 @@ const FormContato = () =>{
     }
 
     function setTipo(e){
-        const {value, checked} = e.target
+        const {value} = e.target
 
         // console.log(value)
         setInfo({

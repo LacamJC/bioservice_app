@@ -4,7 +4,7 @@ const MenuSuspenso = () =>{
     return(
         <>
                 <ul className={`${styles.menu_suspenso}`}>
-                    <img src={logo} height={'100%'}/>
+                    <img src={logo} height={'100%'} loading="lazy" alt="Icone minimalista da bioservice"/>
                     <a href="#home">
                         <li>
                             Home

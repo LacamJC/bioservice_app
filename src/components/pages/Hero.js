@@ -36,7 +36,7 @@ const Hero = () =>{
     
     // Adicione o event listener corretamente (sem os parênteses)
     window.addEventListener('scroll', addClass);
-    useEffect(()=>{addClass()},[])
+    useEffect(()=>{addClass()},[addClass])
     // Chame addClass() para verificar se os elementos já estão visíveis na página inicialmente
     addClass();
 
