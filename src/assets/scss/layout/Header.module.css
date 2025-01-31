@@ -253,9 +253,6 @@
   .cabecalho .menu_controls .checkbox_menu:checked ~ .burguer_icon {
     transform: skew(20deg);
   }
-  .cabecalho .menu_controls .checkbox_menu:hover ~ .burguer_icon {
-    border: 1px solid black;
-  }
   .cabecalho .menu_controls .burguer_icon {
     font-size: 3rem;
     z-index: -1;

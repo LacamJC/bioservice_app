@@ -279,3 +279,29 @@ gap: 15px;
         }
     }
 }
+
+.img_certificado{
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.425);
+}
+
+.video_player{
+    // padding: 2px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
+    // background-color: red;
+    // aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: contain;
+
+    @media screen and (max-width: 900px)
+    {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        // border: 5px solid $verde_floresta;
+        // border-radius: 10px;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.445);
+        // box-shadow: 2px 2px 5px $verde_floresta;
+    }
+}

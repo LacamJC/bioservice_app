@@ -356,4 +356,26 @@
   .pilares .item .header img {
     width: 130px;
   }
+}
+
+.img_certificado {
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.425);
+}
+
+.video_player {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 900px) {
+  .video_player {
+    width: 80%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.445);
+  }
 }/*# sourceMappingURL=Sobre.module.css.map */

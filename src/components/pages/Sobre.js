@@ -88,6 +88,7 @@ const Sobre = () =>{
                         <ReactPlayer
                             url="https://youtu.be/m4FfO-Wvn7c"    
                             controls={true}
+                            className={`${styles.video_player}`}
                         />
                     </div>
                 </div>
@@ -191,7 +192,7 @@ const Sobre = () =>{
 
                         </div>
                         <div className={`col col-12 col-md-4 d-flex justify-content-center align-items-center ${styles.showTag}` }>
-                                                       <img src={certificado_bioservice} loading="lazy" alt="Certificado da bioservice"/>
+                                                       <img src={certificado_bioservice} loading="lazy" alt="Certificado da bioservice" className={`${styles.img_certificado}`}/>
                         </div>
                     </div>
             

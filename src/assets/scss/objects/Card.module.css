@@ -197,17 +197,6 @@
 }
 @media screen and (max-width: 500px) {
   .teste {
-    width: 425px !important;
     padding: 0px !important;
-  }
-}
-@media screen and (max-width: 400px) {
-  .teste {
-    width: 390px !important;
-  }
-}
-@media screen and (max-width: 350px) {
-  .teste {
-    width: 320px !important;
   }
 }/*# sourceMappingURL=Card.module.css.map */
