@@ -52,6 +52,12 @@
     font-weight: 400;
   }
 }
+@media screen and (max-width: 600px) {
+  .paragrafo {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}
 
 .bold {
   font-weight: bold;

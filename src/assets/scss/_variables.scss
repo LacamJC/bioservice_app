@@ -78,6 +78,12 @@ $font_texto: 1.1rem;
         font-weight: 400;
     
     }
+
+    @media screen and (max-width: 600px)
+    {
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
 }
 
 .bold
