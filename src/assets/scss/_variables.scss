@@ -105,24 +105,12 @@ $font_texto: 1.1rem;
 
 .showTag
 {
-    transform: translatex(-0%); 
-    @media screen and (max-width: 768px)
-    {
-        transform: translatex(-2%)
-    }
-    opacity: 0;
-    transition: 1s ease all;
+    opacity: 1;
 }
 
 .showLeg
 {
-    transform: translateX(0%); 
-    @media screen and (max-width: 768px)
-    {
-        transform: translatex(-2%)
-    }
-    opacity: 0;
-    transition: 1s ease all;
+   opacity: 1;
 }
 
 .visivel
