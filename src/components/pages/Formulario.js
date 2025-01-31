@@ -25,7 +25,7 @@ const Formulario = () =>{
     </div>
     <div className={`${styles.body}`}>
         <h2>Formulario para contato via Whatsapp</h2>
-        <p>Este formulario encaminha diretamente para nosso whatsapp as informações que precisamos para auxiliar nossos clientes da maneira mais eficiente</p>
+        <p className={`${styles.paragrafo}`}>Este formulario encaminha diretamente para nosso whatsapp as informações que precisamos para auxiliar nossos clientes da maneira mais eficiente</p>
         <FormContato/>
     </div>
     
