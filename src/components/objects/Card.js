@@ -4,7 +4,7 @@ const Card = ({titulo, texto, items}) =>{
     return(<>
         <div className={`${styles.card}`}>
             <h3>{titulo}</h3>
-            <p>
+            <p className={`${styles.paragrafo}`}>
                 {texto}
             </p>
 

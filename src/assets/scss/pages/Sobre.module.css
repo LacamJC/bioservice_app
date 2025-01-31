@@ -26,7 +26,7 @@
 }
 @media screen and (max-width: 567px) {
   .subTitulo {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -293,16 +293,6 @@
   .voceSabia .dykLista .dykItem .icon {
     width: 100%;
   }
-}
-.voceSabia .dykLista .dykItem p {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  letter-spacing: 2px;
-  text-align: left;
-  text-indent: 1rem;
-  margin-left: 0px;
-  font-weight: 400;
-  padding: 0px 20px;
 }
 
 .pilares {

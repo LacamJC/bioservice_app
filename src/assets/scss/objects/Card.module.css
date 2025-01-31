@@ -26,7 +26,7 @@
 }
 @media screen and (max-width: 567px) {
   .subTitulo {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -155,11 +155,7 @@
   color: white;
   border-radius: 5px 5px 0px 0px;
   padding: 14px;
-}
-.card p {
-  padding: 0px 15px;
-  font-size: 1.2rem;
-  font-family: "Poppins", cursive;
+  font-family: "Oswald", cursive;
 }
 .card ul {
   list-style-type: circle;
