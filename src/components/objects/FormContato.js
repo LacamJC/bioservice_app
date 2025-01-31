@@ -173,16 +173,8 @@ const FormContato = () =>{
                         Para saber se você é uma casa, um pequeno negócio ou um grande estabelecimento, assim podemos entender melhor como ajudar de acordo com as suas necessidades.
                     </p> */}
                     <br/>
-                    <div className="btn-group  border-success btn-group-sm" role="group" aria-label="Basic radio toggle button group">
-                        <input
-                            type="radio"
-                            className="btn-check "
-                            name="btnradio"
-                            id="btnradio1"
-                            onChange={setTipo}
-                            value="Estabelecimento de Grande Porte (Restaurantes, Feiras, Refeitórios)"
-                        />
-                        <label className="btn btn-outline-success py-3 px-3" htmlFor="btnradio1">Estabelecimento de Grande Porte (Restaurantes, Feiras, Refeitórios)</label>
+                    <div className={`btn-group  border-success btn-group-sm ${styles.group}`} role="group" aria-label="Basic radio toggle button group">
+                      
                         
                         <input
                             type="radio"
@@ -192,7 +184,17 @@ const FormContato = () =>{
                              onChange={setTipo}
                             value="Consumidor Médio (Casa, Pequenos Estabelecimentos)"
                             />
-                        <label className="btn btn-outline-success py-3 px-3" htmlFor="btnradio2">Consumidor Médio (Casa, Pequenos Estabelecimentos)</label>
+                        <label className={`${styles.radius} btn btn-outline-success py-3 px-3`} htmlFor="btnradio2">Consumidor Médio (Casa, Pequenos Estabelecimentos)</label>
+
+                        <input
+                            type="radio"
+                            className="btn-check "
+                            name="btnradio"
+                            id="btnradio1"
+                            onChange={setTipo}
+                            value="Estabelecimento de Grande Porte (Restaurantes, Feiras, Refeitórios)"
+                        />
+                        <label className={`${styles.radius} btn btn-outline-success py-3 px-3`} htmlFor="btnradio1">Estabelecimento de Grande Porte (Restaurantes, Feiras, Refeitórios)</label>
                        
                     </div>
                 </div>
@@ -339,14 +341,14 @@ const FormContato = () =>{
                         <div className="form-floating">
                             <textarea
                                 className="form-control"
-                                placeholder="Leave a comment here"
+                                placeholder="Observações"
                                 id="floatingTextarea2"
                                 style={{ height: '100px' }}
                                 name="comentario"
 
                                 onChange={handleChange}
                             />
-                            <label htmlFor="floatingTextarea2">Comentario adicinal ou Dúvida</label>
+                            <label htmlFor="floatingTextarea2">Observações</label>
                         </div>
                     </div>
 

@@ -144,4 +144,18 @@ form input[type=text] {
 }
 form input[type=radio] {
   font-size: 1.2rem;
+}
+form .button {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+  .group .radius {
+    border-radius: 0px;
+  }
 }/*# sourceMappingURL=Form.module.css.map */
